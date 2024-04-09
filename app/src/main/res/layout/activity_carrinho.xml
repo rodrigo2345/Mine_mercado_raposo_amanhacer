@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F4EEEA"
+    tools:context=".view.CarrinhoActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCarrinho"
+        android:layout_width="379dp"
+        android:layout_height="555dp"
+        android:layout_above="@+id/pagarButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="71dp" />
+
+    <TextView
+        android:id="@+id/nomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente: "
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pagarButton"
+        android:text="Total: €0.00"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/paymentRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pagarButton"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:checkedButton="@+id/multibancoRadioButton">
+
+        <RadioButton
+            android:id="@+id/multibancoRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multibanco" />
+
+        <RadioButton
+            android:id="@+id/dinheiroRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinheiro" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pagarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Pagar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/red"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
