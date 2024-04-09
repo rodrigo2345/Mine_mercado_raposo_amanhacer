@@ -33,7 +33,7 @@ public class ConfirmacaoPedidoActivity extends AppCompatActivity {
     private TextView metodoPagamentoTextView;
     private TextView moradaTextView;
     private TextView telefoneTextView;
-    private TextView quantidadeTextView; // Adicione esta linha
+    private TextView quantidadeTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +46,7 @@ public class ConfirmacaoPedidoActivity extends AppCompatActivity {
         metodoPagamentoTextView = findViewById(R.id.metodoPagamentoTextView);
         moradaTextView = findViewById(R.id.moradaTextView);
         telefoneTextView = findViewById(R.id.telefoneTextView);
-        quantidadeTextView = findViewById(R.id.quantidadeTextView); // Adicione esta linha
+        quantidadeTextView = findViewById(R.id.quantidadeTextView);
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -64,13 +64,13 @@ public class ConfirmacaoPedidoActivity extends AppCompatActivity {
 
             if (carrinhoList != null) {
                 StringBuilder detalhes = new StringBuilder();
-                StringBuilder quantidade = new StringBuilder(); // Adicione esta linha
+                StringBuilder quantidade = new StringBuilder();
                 for (Contact contact : carrinhoList) {
                     detalhes.append(contact.getTitle()).append(" - ").append(contact.getLojaPrice()).append("\n");
-                    quantidade.append("Quantidade: ").append(contact.getQuantity()).append("\n"); // Adicione esta linha
+                    quantidade.append("Quantidade: ").append(contact.getQuantity()).append("\n");
                 }
                 detalhesTextView.setText(detalhes.toString());
-                quantidadeTextView.setText(quantidade.toString()); // Adicione esta linha
+                quantidadeTextView.setText(quantidade.toString());
             }
 
             totalTextView.setText("Total: €" + String.format("%.2f", total));

@@ -97,13 +97,11 @@ public class CarrinhoAdapter extends RecyclerView.Adapter<CarrinhoAdapter.Carrin
                 .setMessage("Tem certeza que deseja excluir este item?")
                 .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        // Remove o item da lista
                         carrinhoList.remove(position);
                         notifyItemRemoved(position);
                         notifyItemRangeChanged(position, getItemCount());
                         ((CarrinhoActivity) mContext).updateTotal();
 
-                        // Atualiza e salva a lista no SharedPreferences
                         ((CarrinhoActivity) mContext).saveCarrinhoList(carrinhoList);
 
                         dialog.dismiss();
@@ -111,13 +109,15 @@ public class CarrinhoAdapter extends RecyclerView.Adapter<CarrinhoAdapter.Carrin
                 })
                 .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        // Cancela a exclusão
                         dialog.dismiss();
                     }
                 })
                 .show();
     }
-
+    public void setCarrinhoList(List<Contact> carrinhoList) {
+        this.carrinhoList = carrinhoList;
+        notifyDataSetChanged();
+    }
     @Override
     public int getItemCount() {
         return carrinhoList.size();
