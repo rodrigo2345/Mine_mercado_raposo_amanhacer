@@ -7,6 +7,8 @@ import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +20,7 @@ import com.example.mine_mercado_raposo_amanhacer.R;
 import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.Contact;
 import com.google.gson.Gson;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
@@ -34,12 +37,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class CarrinhoAdapter extends RecyclerView.Adapter<CarrinhoAdapter.CarrinhoViewHolder> {
+
     private List<Contact> carrinhoList;
     private Context mContext;
 
     public CarrinhoAdapter(Context context, List<Contact> carrinhoList) {
         this.mContext = context;
-        this.carrinhoList = carrinhoList;
+        if (carrinhoList == null) {
+            this.carrinhoList = new ArrayList<>();
+        } else {
+            this.carrinhoList = carrinhoList;
+        }
     }
 
     @NonNull
@@ -55,67 +63,83 @@ public class CarrinhoAdapter extends RecyclerView.Adapter<CarrinhoAdapter.Carrin
         holder.titleTextView.setText(contact.getTitle());
         holder.priceTextView.setText(contact.getLojaPrice());
         holder.imageView.setImageResource(contact.getRestaurantImage());
+        holder.quantityTextView.setText(String.valueOf(contact.getQuantity())); // Definindo a quantidade
 
-        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+        holder.btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onLongClick(View v) {
-                showDeleteConfirmationDialog(position);
-                return true;
+            public void onClick(View view) {
+                contact.setQuantity(contact.getQuantity() + 1);
+                notifyDataSetChanged();
+                ((CarrinhoActivity) mContext).updateTotal();
             }
         });
-    }
 
-    @Override
-    public int getItemCount() {
-        if (carrinhoList != null) {
-            return carrinhoList.size();
-        } else {
-            return 0;
-        }
+        holder.btnRemove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int newQuantity = contact.getQuantity() - 1;
+                if (newQuantity >= 0) {
+                    contact.setQuantity(newQuantity);
+                    notifyDataSetChanged();
+                    ((CarrinhoActivity) mContext).updateTotal();
+                    if (newQuantity == 0) {
+                        showDeleteConfirmationDialog(position);
+                    }
+                }
+            }
+        });
+
     }
 
     private void showDeleteConfirmationDialog(final int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-        builder.setTitle("Remover item");
-        builder.setMessage("Tem certeza de que deseja remover este item do carrinho?");
-        builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                removeFromCart(position);
-            }
-        });
-        builder.setNegativeButton("Cancelar", null);
-        builder.show();
+        builder.setTitle("Confirmar Exclusão")
+                .setMessage("Tem certeza que deseja excluir este item?")
+                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Remove o item da lista
+                        carrinhoList.remove(position);
+                        notifyItemRemoved(position);
+                        notifyItemRangeChanged(position, getItemCount());
+                        ((CarrinhoActivity) mContext).updateTotal();
+
+                        // Atualiza e salva a lista no SharedPreferences
+                        ((CarrinhoActivity) mContext).saveCarrinhoList(carrinhoList);
+
+                        dialog.dismiss();
+                    }
+                })
+                .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Cancela a exclusão
+                        dialog.dismiss();
+                    }
+                })
+                .show();
     }
 
-    public void removeFromCart(int position) {
-        carrinhoList.remove(position);
-        notifyDataSetChanged();
-        saveCartToSharedPreferences();
-        Toast.makeText(mContext, "Item removido do carrinho", Toast.LENGTH_SHORT).show();
-
-        ((CarrinhoActivity) mContext).updateTotal();
-    }
-
-    private void saveCartToSharedPreferences() {
-        SharedPreferences preferences = mContext.getSharedPreferences("Carrinho", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        Gson gson = new Gson();
-        String json = gson.toJson(carrinhoList);
-        editor.putString("carrinhoList", json);
-        editor.apply();
+    @Override
+    public int getItemCount() {
+        return carrinhoList.size();
     }
 
     public class CarrinhoViewHolder extends RecyclerView.ViewHolder {
+
         private TextView titleTextView;
         private TextView priceTextView;
+        private TextView quantityTextView;
         private ImageView imageView;
+        private Button btnAdd;
+        private Button btnRemove;
 
         public CarrinhoViewHolder(@NonNull View itemView) {
             super(itemView);
             titleTextView = itemView.findViewById(R.id.textViewProductName);
             priceTextView = itemView.findViewById(R.id.textViewProductPrice);
+            quantityTextView = itemView.findViewById(R.id.textViewProductQuantidade);
             imageView = itemView.findViewById(R.id.imageViewProduct);
+            btnAdd = itemView.findViewById(R.id.btnAdicionar);
+            btnRemove = itemView.findViewById(R.id.btnRemover);
         }
     }
 }

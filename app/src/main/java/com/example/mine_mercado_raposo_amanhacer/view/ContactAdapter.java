@@ -81,7 +81,6 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
         private View rootView;
         private ImageView ImageViewAvatar;
         private TextView Title;
-        private TextView Fee;
         private TextView RestaurantType;
         private Button addBtn;
 

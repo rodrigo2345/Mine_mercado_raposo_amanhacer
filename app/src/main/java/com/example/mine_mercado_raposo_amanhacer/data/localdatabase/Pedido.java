@@ -85,4 +85,13 @@ public class Pedido {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+
+    // Método para calcular a quantidade total de produtos no pedido
+    public int getTotalQuantity() {
+        int totalQuantity = 0;
+        for (Contact contact : carrinhoList) {
+            totalQuantity += contact.getQuantity();
+        }
+        return totalQuantity;
+    }
 }

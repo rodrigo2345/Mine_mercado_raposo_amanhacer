@@ -46,6 +46,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CarrinhoActivity extends AppCompatActivity {
+
     private RecyclerView recyclerView;
     private CarrinhoAdapter adapter;
     private List<Contact> carrinhoList;
@@ -73,20 +74,16 @@ public class CarrinhoActivity extends AppCompatActivity {
         paymentRadioGroup = findViewById(R.id.paymentRadioGroup);
 
         carrinhoList = retrieveCarrinhoList();
-        double total = calcularTotal(carrinhoList);
-        totalTextView.setText("Total: €" + String.format("%.2f", total));
+        updateTotal();
 
         adapter = new CarrinhoAdapter(this, carrinhoList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         if (carrinhoList != null && carrinhoList.isEmpty()) {
-            // Se o carrinho estiver vazio, desabilita o botão de pagar
             pagarButton.setEnabled(false);
-            // Exibe uma mensagem informando que o carrinho está vazio
             Toast.makeText(this, "Adicione produtos ao carrinho para prosseguir com o pagamento.", Toast.LENGTH_SHORT).show();
         } else {
-            // Se houver itens no carrinho, habilita o botão de pagar
             pagarButton.setEnabled(true);
         }
 
@@ -94,7 +91,6 @@ public class CarrinhoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (carrinhoList.isEmpty()) {
-                    // Se o carrinho estiver vazio, exibir uma mensagem de erro
                     Toast.makeText(CarrinhoActivity.this, "O carrinho está vazio.", Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -105,7 +101,7 @@ public class CarrinhoActivity extends AppCompatActivity {
                 } else {
                     RadioButton selectedRadioButton = findViewById(selectedId);
                     String metodoPagamento = selectedRadioButton.getText().toString();
-                    enviarPedidoParaFirebase(carrinhoList, total, metodoPagamento);
+                    enviarPedidoParaFirebase(carrinhoList, calcularTotal(carrinhoList), metodoPagamento);
                 }
             }
         });
@@ -119,7 +115,7 @@ public class CarrinhoActivity extends AppCompatActivity {
         if (carrinhoList != null) {
             for (Contact contact : carrinhoList) {
                 if (contact != null && contact.getLojaPrice() != null) {
-                    total += Double.parseDouble(contact.getLojaPrice().replace("€", "").replace(",", "."));
+                    total += Double.parseDouble(contact.getLojaPrice().replace("€", "").replace(",", ".")) * contact.getQuantity();
                 }
             }
         }
@@ -153,6 +149,12 @@ public class CarrinhoActivity extends AppCompatActivity {
                     intent.putExtra("morada", moradaCliente);
                     intent.putExtra("telefone", telefoneCliente);
                     startActivity(intent);
+
+                    // Limpar o carrinho após o pagamento
+                    saveCarrinhoList(new ArrayList<>());
+                    carrinhoList.clear();
+                    adapter.notifyDataSetChanged();
+                    updateTotal();
                 }
             }
 
@@ -163,7 +165,6 @@ public class CarrinhoActivity extends AppCompatActivity {
         });
     }
 
-
     private List<Contact> retrieveCarrinhoList() {
         SharedPreferences preferences = getSharedPreferences("Carrinho", Context.MODE_PRIVATE);
         Gson gson = new Gson();
@@ -172,7 +173,7 @@ public class CarrinhoActivity extends AppCompatActivity {
         if (json != null) {
             return gson.fromJson(json, type);
         } else {
-            return new ArrayList<>(); // Inicializa uma lista vazia se não houver dados salvos
+            return new ArrayList<>();
         }
     }
 
@@ -181,24 +182,7 @@ public class CarrinhoActivity extends AppCompatActivity {
         totalTextView.setText("Total: €" + String.format("%.2f", total));
     }
 
-    // Método para adicionar produto ao carrinho com atualização local
-    private void adicionarProdutoAoCarrinho(Contact produto) {
-        carrinhoList.add(produto);
-        saveCarrinhoList(carrinhoList);
-        // Atualizar a exibição
-        updateTotal();
-    }
-
-    // Método para remover produto do carrinho com atualização local
-    private void removerProdutoDoCarrinho(Contact produto) {
-        carrinhoList.remove(produto);
-        saveCarrinhoList(carrinhoList);
-        // Atualizar a exibição
-        updateTotal();
-    }
-
-    // Método para salvar a lista de produtos do carrinho localmente
-    private void saveCarrinhoList(List<Contact> carrinhoList) {
+    public void saveCarrinhoList(List<Contact> carrinhoList) {
         SharedPreferences preferences = getSharedPreferences("Carrinho", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         Gson gson = new Gson();

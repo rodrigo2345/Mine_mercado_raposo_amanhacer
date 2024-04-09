@@ -13,17 +13,20 @@ public class Contact implements Parcelable {
     private String title;
     private String lojaPrice;
     private int restaurantImage;
+    private int quantity; // Adicionando a quantidade
 
-    public Contact(String title, String lojaPrice, int restaurantImage) {
+    public Contact(String title, String lojaPrice, int restaurantImage, int quantity) {
         this.title = title;
         this.lojaPrice = lojaPrice;
         this.restaurantImage = restaurantImage;
+        this.quantity = quantity;
     }
 
     protected Contact(Parcel in) {
         title = in.readString();
         lojaPrice = in.readString();
         restaurantImage = in.readInt();
+        quantity = in.readInt();
     }
 
     public static final Creator<Contact> CREATOR = new Creator<Contact>() {
@@ -50,6 +53,14 @@ public class Contact implements Parcelable {
         return restaurantImage;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -60,5 +71,6 @@ public class Contact implements Parcelable {
         dest.writeString(title);
         dest.writeString(lojaPrice);
         dest.writeInt(restaurantImage);
+        dest.writeInt(quantity);
     }
 }

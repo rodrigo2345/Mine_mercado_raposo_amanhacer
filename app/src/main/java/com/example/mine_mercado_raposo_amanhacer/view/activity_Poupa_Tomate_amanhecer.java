@@ -41,10 +41,10 @@ public class activity_Poupa_Tomate_amanhecer extends AppCompatActivity {
         setContentView(R.layout.activity_poupa_tomate_amanhecer);
 
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Polpa Tomate  AMANCHECER", "0,35€", R.drawable.tomate_poupa));
+        contactList.add(new Contact("Polpa Tomate  AMANCHECER", "0,35€", R.drawable.tomate_poupa, 1));
 
         recyclerView = findViewById(R.id.recyclerView_product2);
-        carrinhoList = retrieveCarrinhoList();
+        carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
@@ -53,12 +53,17 @@ public class activity_Poupa_Tomate_amanhecer extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
     }
 
-    private List<Contact> retrieveCarrinhoList() {
+    private List<Contact> getCarrinhoListFromSharedPreferences() {
         SharedPreferences preferences = getSharedPreferences("Carrinho", Context.MODE_PRIVATE);
         Gson gson = new Gson();
         String json = preferences.getString("carrinhoList", null);
-        Type type = new TypeToken<ArrayList<Contact>>() {}.getType();
-        return gson.fromJson(json, type);
+        if (json != null) {
+            Type type = new TypeToken<ArrayList<Contact>>() {
+            }.getType();
+            return gson.fromJson(json, type);
+        } else {
+            return new ArrayList<>();
+        }
     }
 
     public void Search(View view) {
@@ -69,35 +74,5 @@ public class activity_Poupa_Tomate_amanhecer extends AppCompatActivity {
     public void Home(View view) {
         Intent intent = new Intent(activity_Poupa_Tomate_amanhecer.this, MainActivity.class);
         startActivity(intent);
-    }
-    public void openCarrinhoActivity(View view) {
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        if (user != null) {
-            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("clientes").child(user.getUid());
-            databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    if (snapshot.exists()) {
-                        String nomeUsuario = snapshot.child("nome").getValue(String.class);
-                        if (nomeUsuario != null && !nomeUsuario.isEmpty()) {
-                            Intent intent = new Intent(activity_Poupa_Tomate_amanhecer.this, CarrinhoActivity.class);
-                            intent.putExtra("nome", nomeUsuario);
-                            startActivity(intent);
-                        } else {
-                            Toast.makeText(activity_Poupa_Tomate_amanhecer.this, "Nome do cliente não encontrado.", Toast.LENGTH_SHORT).show();
-                        }
-                    } else {
-                        Toast.makeText(activity_Poupa_Tomate_amanhecer.this, "Cliente não encontrado.", Toast.LENGTH_SHORT).show();
-                    }
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-                    Toast.makeText(activity_Poupa_Tomate_amanhecer.this, "Erro ao recuperar dados do cliente.", Toast.LENGTH_SHORT).show();
-                }
-            });
-        } else {
-            Toast.makeText(activity_Poupa_Tomate_amanhecer.this, "Usuário não autenticado.", Toast.LENGTH_SHORT).show();
-        }
     }
 }
