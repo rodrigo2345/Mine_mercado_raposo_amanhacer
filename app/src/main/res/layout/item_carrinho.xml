@@ -74,8 +74,8 @@
 
     <TextView
         android:id="@+id/textViewProductPrice"
-        android:layout_width="171dp"
-        android:layout_height="20dp"
+        android:layout_width="176dp"
+        android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:text="Textviewpreço"
         android:textColor="#373B54"
