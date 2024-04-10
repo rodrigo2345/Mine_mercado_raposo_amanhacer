@@ -10,15 +10,15 @@
 
 
     <ImageView
-        android:id="@+id/imageViewProduct"
+        android:id="@+id/imageViewProduct2"
         android:layout_width="183dp"
         android:layout_height="194dp"
         android:contentDescription="Product Image"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.158" />
 
@@ -31,63 +31,47 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewProductPrice" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductPrice2" />
 
     <TextView
-        android:id="@+id/textViewProductName"
+        android:id="@+id/textViewProductName2"
         android:layout_width="256dp"
         android:layout_height="82dp"
-        android:layout_marginEnd="156dp"
         android:text="Nome do Produto"
         android:textColor="#373B54"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textViewProductPrice"
-        app:layout_constraintHorizontal_bias="0.014"
-        app:layout_constraintStart_toStartOf="@+id/textViewProductPrice"
-        app:layout_constraintTop_toBottomOf="@+id/textViewProductQuantidade"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewProduct2"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="@+id/imageViewProduct2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProduct2"
         tools:text="Arroz Agulha" />
 
     <TextView
-        android:id="@+id/textViewProductPrice"
+        android:id="@+id/textViewProductPrice2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="Textviewpreço"
         android:textColor="#373B54"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewProduct"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageViewProduct"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441"
+        app:layout_constraintEnd_toEndOf="@+id/textViewProductName2"
+        app:layout_constraintStart_toStartOf="@+id/textViewProductName2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductName2"
         tools:text="R$ 1,85" />
 
     <Button
         android:id="@+id/addToCartButton"
-        android:layout_width="211dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="221dp"
+        android:layout_height="77dp"
         android:backgroundTint="@color/red"
         android:text="Adicionar ao Carrinho"
         android:textColor="#FFFFFF"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewProductName"
-        app:layout_constraintHorizontal_bias="0.066"
-        app:layout_constraintStart_toStartOf="@+id/textViewProductName"
-        app:layout_constraintTop_toBottomOf="@+id/textViewProductName" />
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewProductPrice2"
+        app:layout_constraintStart_toStartOf="@+id/textViewProductPrice2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductPrice2" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="98dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageViewProduct"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

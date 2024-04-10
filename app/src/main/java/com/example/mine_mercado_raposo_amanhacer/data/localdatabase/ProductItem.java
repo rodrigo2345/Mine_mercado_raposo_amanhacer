@@ -5,6 +5,12 @@ import android.content.Intent;
 
 import com.example.mine_mercado_raposo_amanhacer.view.activity_Arroz_Agulha_amanhecer;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_Poupa_Tomate_amanhecer;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_5kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_valouro_granulado_galinhas_poedeiras_30kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_valouro_granulado_galinhas_poedeiras_5kg;
 
 public class ProductItem {
 
@@ -60,6 +66,24 @@ public class ProductItem {
                 break;
             case "Poupa de Tomate AMACHECER":
                 intent = new Intent(context, activity_Poupa_Tomate_amanhecer.class);
+                break;
+            case "Milho Partido 25KG":
+                intent = new Intent(context, activity_milho_partido_25kg.class);
+                break;
+            case "Valouro Granulado para Galinhas Poedeiras 30KG":
+                intent = new Intent(context, activity_valouro_granulado_galinhas_poedeiras_30kg.class);
+                break;
+            case "Valouro Granulado para Galinhas Poedeiras 5KG":
+                intent = new Intent(context, activity_valouro_granulado_galinhas_poedeiras_5kg.class);
+                break;
+            case "Mistura de Cereais para Aves 25KG":
+                intent = new Intent(context, activity_mistura_cereais_para_aves_25kg.class);
+                break;
+            case "Mistura de Cereais para Aves 5KG":
+                intent = new Intent(context, activity_mistura_cereais_para_aves_5kg.class);
+                break;
+            case "Milho Partido 5KG":
+                intent = new Intent(context, activity_milho_partido_5kg.class);
                 break;
             default:
                 break;

@@ -87,9 +87,9 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
         public ContactViewHolder(@NonNull View rootView) {
             super(rootView);
             this.rootView = rootView;
-            this.Title = rootView.findViewById(R.id.textViewProductName);
-            this.RestaurantType = rootView.findViewById(R.id.textViewProductPrice);
-            this.ImageViewAvatar = rootView.findViewById(R.id.imageViewProduct);
+            this.Title = rootView.findViewById(R.id.textViewProductName2);
+            this.RestaurantType = rootView.findViewById(R.id.textViewProductPrice2);
+            this.ImageViewAvatar = rootView.findViewById(R.id.imageViewProduct2);
             this.addBtn = rootView.findViewById(R.id.addToCartButton);
         }
     }

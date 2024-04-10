@@ -3,7 +3,6 @@ package com.example.mine_mercado_raposo_amanhacer.view;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,7 +21,6 @@ import android.widget.TextView;
 import com.example.mine_mercado_raposo_amanhacer.R;
 import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.Contact;
 import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.Pedido;
-import com.example.mine_mercado_raposo_amanhacer.viewmodel.CarrinhoViewModel;
 import com.google.common.reflect.TypeToken;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -47,12 +45,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class CarrinhoActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private CarrinhoAdapter adapter;
-    private CarrinhoViewModel viewModel;
+    private List<Contact> carrinhoList;
     private TextView totalTextView;
     private Button pagarButton;
     private RadioGroup paymentRadioGroup;
@@ -76,25 +73,14 @@ public class CarrinhoActivity extends AppCompatActivity {
         pagarButton = findViewById(R.id.pagarButton);
         paymentRadioGroup = findViewById(R.id.paymentRadioGroup);
 
-        viewModel = new ViewModelProvider(this).get(CarrinhoViewModel.class);
-
-        viewModel.getCarrinhoListLiveData().observe(this, carrinhoList -> {
-            adapter.setCarrinhoList(carrinhoList);
-            updateTotal();
-        });
-
-        viewModel.getTotalLiveData().observe(this, total -> {
-            totalTextView.setText("Total: €" + String.format("%.2f", total));
-        });
-
-        List<Contact> carrinhoList = retrieveCarrinhoList();
-        viewModel.setCarrinhoList(carrinhoList);
+        carrinhoList = retrieveCarrinhoList();
+        updateTotal();
 
         adapter = new CarrinhoAdapter(this, carrinhoList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        if (carrinhoList.isEmpty()) {
+        if (carrinhoList != null && carrinhoList.isEmpty()) {
             pagarButton.setEnabled(false);
             Toast.makeText(this, "Adicione produtos ao carrinho para prosseguir com o pagamento.", Toast.LENGTH_SHORT).show();
         } else {
@@ -104,7 +90,7 @@ public class CarrinhoActivity extends AppCompatActivity {
         pagarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (viewModel.getCarrinhoListLiveData().getValue().isEmpty()) {
+                if (carrinhoList.isEmpty()) {
                     Toast.makeText(CarrinhoActivity.this, "O carrinho está vazio.", Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -115,7 +101,7 @@ public class CarrinhoActivity extends AppCompatActivity {
                 } else {
                     RadioButton selectedRadioButton = findViewById(selectedId);
                     String metodoPagamento = selectedRadioButton.getText().toString();
-                    enviarPedidoParaFirebase(viewModel.getCarrinhoListLiveData().getValue(), viewModel.getTotalLiveData().getValue(), metodoPagamento);
+                    enviarPedidoParaFirebase(carrinhoList, calcularTotal(carrinhoList), metodoPagamento);
                 }
             }
         });
@@ -164,9 +150,10 @@ public class CarrinhoActivity extends AppCompatActivity {
                     intent.putExtra("telefone", telefoneCliente);
                     startActivity(intent);
 
-                    // Limpar o carrinho após o pagamento
                     saveCarrinhoList(new ArrayList<>());
-                    viewModel.setCarrinhoList(new ArrayList<>());
+                    carrinhoList.clear();
+                    adapter.notifyDataSetChanged();
+                    updateTotal();
                 }
             }
 
@@ -190,7 +177,7 @@ public class CarrinhoActivity extends AppCompatActivity {
     }
 
     public void updateTotal() {
-        double total = calcularTotal(viewModel.getCarrinhoListLiveData().getValue());
+        double total = calcularTotal(carrinhoList);
         totalTextView.setText("Total: €" + String.format("%.2f", total));
     }
 

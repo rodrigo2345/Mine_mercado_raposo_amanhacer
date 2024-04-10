@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_Arroz_Agulha_amanhecer">
-
+    tools:context=".view.activity_mistura_cereais_para_aves_25kg">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
@@ -104,7 +103,7 @@
         tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView_product2"
+        android:id="@+id/recyclerView_product6"
         android:layout_width="409dp"
         android:layout_height="624dp"
         android:layout_marginTop="1dp"

@@ -28,6 +28,24 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.activity_milho_partido_5kg"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_mistura_cereais_para_aves_5kg"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_mistura_cereais_para_aves_25kg"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_valouro_granulado_galinhas_poedeiras_5kg"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_valouro_granulado_galinhas_poedeiras_30kg"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_milho_partido_25kg"
+            android:exported="false" />
+        <activity
             android:name=".view.SobreActivity"
             android:exported="false" />
         <activity

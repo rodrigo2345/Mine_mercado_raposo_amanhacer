@@ -63,7 +63,7 @@ public class CarrinhoAdapter extends RecyclerView.Adapter<CarrinhoAdapter.Carrin
         holder.titleTextView.setText(contact.getTitle());
         holder.priceTextView.setText(contact.getLojaPrice());
         holder.imageView.setImageResource(contact.getRestaurantImage());
-        holder.quantityTextView.setText(String.valueOf(contact.getQuantity())); // Definindo a quantidade
+        holder.quantityTextView.setText(String.valueOf(contact.getQuantity()));
 
         holder.btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +71,7 @@ public class CarrinhoAdapter extends RecyclerView.Adapter<CarrinhoAdapter.Carrin
                 contact.setQuantity(contact.getQuantity() + 1);
                 notifyDataSetChanged();
                 ((CarrinhoActivity) mContext).updateTotal();
+                ((CarrinhoActivity) mContext).saveCarrinhoList(carrinhoList);
             }
         });
 
@@ -85,6 +86,7 @@ public class CarrinhoAdapter extends RecyclerView.Adapter<CarrinhoAdapter.Carrin
                     if (newQuantity == 0) {
                         showDeleteConfirmationDialog(position);
                     }
+                    ((CarrinhoActivity) mContext).saveCarrinhoList(carrinhoList);
                 }
             }
         });
@@ -109,6 +111,12 @@ public class CarrinhoAdapter extends RecyclerView.Adapter<CarrinhoAdapter.Carrin
                 })
                 .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
+                        Contact contact = carrinhoList.get(position);
+                        contact.setQuantity(1);
+                        notifyDataSetChanged();
+                        ((CarrinhoActivity) mContext).updateTotal();
+                        ((CarrinhoActivity) mContext).saveCarrinhoList(carrinhoList);
+
                         dialog.dismiss();
                     }
                 })
