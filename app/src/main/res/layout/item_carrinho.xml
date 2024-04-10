@@ -25,7 +25,7 @@
         android:id="@+id/btnRemover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="104dp"
         android:backgroundTint="@color/red"
         android:text="-"
         android:textColor="#FFFFFF"
@@ -44,10 +44,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btnAdicionar"
-        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toEndOf="@id/btnRemover"
         app:layout_constraintTop_toBottomOf="@+id/textViewProductPrice"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnAdicionar"
@@ -58,12 +58,13 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/btnRemover"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewProduct" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProduct"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textViewProductName"
-        android:layout_width="172dp"
-        android:layout_height="56dp"
+        android:layout_width="190dp"
+        android:layout_height="67dp"
         android:text="Nome do Produto"
         android:textColor="#373B54"
         android:textSize="16sp"
@@ -74,8 +75,8 @@
 
     <TextView
         android:id="@+id/textViewProductPrice"
-        android:layout_width="176dp"
-        android:layout_height="35dp"
+        android:layout_width="182dp"
+        android:layout_height="46dp"
         android:layout_marginTop="8dp"
         android:text="Textviewpreço"
         android:textColor="#373B54"

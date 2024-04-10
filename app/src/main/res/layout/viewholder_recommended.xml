@@ -35,8 +35,8 @@
 
     <TextView
         android:id="@+id/textViewProductName2"
-        android:layout_width="256dp"
-        android:layout_height="82dp"
+        android:layout_width="330dp"
+        android:layout_height="118dp"
         android:text="Nome do Produto"
         android:textColor="#373B54"
         android:textSize="24sp"
@@ -51,7 +51,7 @@
         android:id="@+id/textViewProductPrice2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:text="Textviewpreço"
         android:textColor="#373B54"
         android:textSize="24sp"
