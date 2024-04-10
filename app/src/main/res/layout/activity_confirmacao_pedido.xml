@@ -49,6 +49,19 @@
         app:layout_constraintEnd_toEndOf="@+id/detalhesTextView"
         app:layout_constraintStart_toStartOf="@+id/detalhesTextView"
         app:layout_constraintTop_toBottomOf="@+id/detalhesTextView" />
+
+
+    <TextView
+        android:id="@+id/totalQuantidadesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantidadeTextView"
+        android:layout_marginTop="8dp"
+        android:text="Total de Quantidades: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/quantidadeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/quantidadeTextView" />
+
     <TextView
         android:id="@+id/moradaTextView"
         android:layout_width="wrap_content"
@@ -80,8 +93,8 @@
 
     <TextView
         android:id="@+id/totalTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="182dp"
+        android:layout_height="32dp"
         android:layout_below="@id/metodoPagamentoTextView"
         android:layout_marginTop="8dp"
         android:text="Total: €0.00"
@@ -97,8 +110,8 @@
         android:layout_marginTop="8dp"
         android:text="Método de pagamento:"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/detalhesTextView"
-        app:layout_constraintTop_toBottomOf="@+id/quantidadeTextView" />
+        app:layout_constraintStart_toStartOf="@+id/totalQuantidadesTextView"
+        app:layout_constraintTop_toBottomOf="@+id/totalQuantidadesTextView" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
