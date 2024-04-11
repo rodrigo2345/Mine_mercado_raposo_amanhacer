@@ -9,6 +9,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25k
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_5kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_adulto_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_valouro_granulado_galinhas_poedeiras_30kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_valouro_granulado_galinhas_poedeiras_5kg;
 
@@ -85,6 +86,10 @@ public class ProductItem {
             case "Milho Partido 5KG":
                 intent = new Intent(context, activity_milho_partido_5kg.class);
                 break;
+            case "Spike Racao Seca de Cao Adulto 4KG":
+                intent = new Intent(context, activity_spike_racao_seca_cao_adulto_4kg.class);
+                break;
+
             default:
                 break;
         }
