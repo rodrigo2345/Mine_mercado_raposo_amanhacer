@@ -8,10 +8,13 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_Poupa_Tomate_aman
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_basic_racao_seca_cao_adulto_20kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_20kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_2kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_peixe_2kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_5kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_peru_frango_purina_friskies;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_racao_seca_gato_friskies_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_adulto_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_junior_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_valouro_granulado_galinhas_poedeiras_30kg;
@@ -104,6 +107,15 @@ public class ProductItem {
                 break;
             case "Avenal Racao Seca de Gato Cereais Carne 2KG":
                 intent = new Intent(context, activity_avenal_racao_seca_gato_cereais_carne_2kg.class);
+                break;
+            case "Avenal Racao Seca de Gato Peixe 2KG":
+                intent = new Intent(context, activity_avenal_racao_seca_gato_peixe_2kg.class);
+                break;
+            case "Racao Seca de Gato Esterilizado Peru e Frango Purina Friskies 1,5KG":
+                intent = new Intent(context, activity_peru_frango_purina_friskies.class);
+                break;
+            case "Racao Seca de Gato Friskies 4KG":
+                intent = new Intent(context, activity_racao_seca_gato_friskies_4kg.class);
                 break;
             default:
                 break;
