@@ -6,6 +6,8 @@ import android.content.Intent;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_Arroz_Agulha_amanhecer;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_Poupa_Tomate_amanhecer;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_basic_racao_seca_cao_adulto_20kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_20kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_2kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
@@ -96,6 +98,12 @@ public class ProductItem {
                 break;
             case "Spike Racao Seca de Cao Junior 4KG":
                 intent = new Intent(context, activity_spike_racao_seca_cao_junior_4kg.class);
+                break;
+            case "Avenal Racao Seca de Gato Cereais Carne 20KG":
+                intent = new Intent(context, activity_avenal_racao_seca_gato_cereais_carne_20kg.class);
+                break;
+            case "Avenal Racao Seca de Gato Cereais Carne 2KG":
+                intent = new Intent(context, activity_avenal_racao_seca_gato_cereais_carne_2kg.class);
                 break;
             default:
                 break;
