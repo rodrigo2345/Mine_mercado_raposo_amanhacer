@@ -5,11 +5,13 @@ import android.content.Intent;
 
 import com.example.mine_mercado_raposo_amanhacer.view.activity_Arroz_Agulha_amanhecer;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_Poupa_Tomate_amanhecer;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_basic_racao_seca_cao_adulto_20kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_adulto_4kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_junior_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_valouro_granulado_galinhas_poedeiras_30kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_valouro_granulado_galinhas_poedeiras_5kg;
 
@@ -89,7 +91,12 @@ public class ProductItem {
             case "Spike Racao Seca de Cao Adulto 4KG":
                 intent = new Intent(context, activity_spike_racao_seca_cao_adulto_4kg.class);
                 break;
-
+            case "Avenal Basic Racao Seca Cao Adulto 20KG":
+                intent = new Intent(context, activity_avenal_basic_racao_seca_cao_adulto_20kg.class);
+                break;
+            case "Spike Racao Seca de Cao Junior 4KG":
+                intent = new Intent(context, activity_spike_racao_seca_cao_junior_4kg.class);
+                break;
             default:
                 break;
         }

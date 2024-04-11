@@ -28,6 +28,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.activity_spike_racao_seca_cao_junior_4kg"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_avenal_basic_racao_seca_cao_adulto_20kg"
+            android:exported="false" />
+        <activity
             android:name=".view.activity_spike_racao_seca_cao_adulto_4kg"
             android:exported="false" />
         <activity
