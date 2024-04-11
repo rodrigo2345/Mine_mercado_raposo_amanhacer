@@ -8,7 +8,9 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_Poupa_Tomate_aman
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_basic_racao_seca_cao_adulto_20kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_20kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_2kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_peixe_2kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_gato_mousse_purina_gourmet;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
@@ -116,6 +118,12 @@ public class ProductItem {
                 break;
             case "Racao Seca de Gato Friskies 4KG":
                 intent = new Intent(context, activity_racao_seca_gato_friskies_4kg.class);
+                break;
+            case "Alimento Gato Mousse Purina Gourmet 85GR":
+                intent = new Intent(context, activity_gato_mousse_purina_gourmet.class);
+                break;
+            case "Avenal Racao Seca de Gato Cereais Carne 4KG":
+                intent = new Intent(context, activity_avenal_racao_seca_gato_cereais_carne_4kg.class);
                 break;
             default:
                 break;
