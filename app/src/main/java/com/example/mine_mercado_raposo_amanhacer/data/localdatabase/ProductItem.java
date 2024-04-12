@@ -10,12 +10,14 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_2kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_peixe_2kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_preto_PP;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_farinheira_branca_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_gato_mousse_purina_gourmet;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_5kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_morcela_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_peru_frango_purina_friskies;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_racao_seca_gato_friskies_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_adulto_4kg;
@@ -128,6 +130,12 @@ public class ProductItem {
                 break;
             case "Farinheira Branca Porco Branco":
                 intent = new Intent(context, activity_farinheira_branca_porco_branco.class);
+                break;
+            case "Morcela Porco Branco":
+                intent = new Intent(context, activity_morcela_porco_branco.class);
+                break;
+            case "Chourico de Carne Porco Preto PP":
+                intent = new Intent(context, activity_chourico_carne_porco_preto_PP.class);
                 break;
             default:
                 break;
