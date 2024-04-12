@@ -22,6 +22,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_p
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_morcela_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_chouricao_FT_100GR;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_fiambre_fatias_finas_100GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_paio_york_FT_90GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_presunto_fatiado_70GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_peru_frango_purina_friskies;
@@ -168,6 +169,9 @@ public class ProductItem {
                 break;
             case "Nobre Paio York FT 90GR":
                 intent = new Intent(context, activity_nobre_paio_york_FT_90GR.class);
+                break;
+            case "Nobre Fiambre Fatias Finas 100GR":
+                intent = new Intent(context, activity_nobre_fiambre_fatias_finas_100GR.class);
                 break;
             default:
                 break;
