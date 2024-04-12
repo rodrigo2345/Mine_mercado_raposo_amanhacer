@@ -13,6 +13,8 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca
 import com.example.mine_mercado_raposo_amanhacer.view.activity_bacon_primor_nacos_200GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_branco_PB;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_preto_PP;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_grosso_porco_branco_estremoz;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_grosso_porco_preto_estremoz;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_farinheira_branca_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_fiambre_peito_peru_forno_lenha_120GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_gato_mousse_purina_gourmet;
@@ -26,6 +28,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_fiambre_fat
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_paio_york_FT_90GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_presunto_fatiado_70GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_peru_frango_purina_friskies;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_presunto_duroc_nacos_primor_300GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_probar_bacon_fumado_fatiado_75GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_racao_seca_gato_friskies_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_adulto_4kg;
@@ -172,6 +175,15 @@ public class ProductItem {
                 break;
             case "Nobre Fiambre Fatias Finas 100GR":
                 intent = new Intent(context, activity_nobre_fiambre_fatias_finas_100GR.class);
+                break;
+            case "Chourico Grosso Porco Branco Estremoz":
+                intent = new Intent(context, activity_chourico_grosso_porco_branco_estremoz.class);
+                break;
+            case "Chourico Grosso Porco Preto Estremoz":
+                intent = new Intent(context, activity_chourico_grosso_porco_preto_estremoz.class);
+                break;
+            case "Presunto Duroc Sem Ossos Nacos Primor 300GR":
+                intent = new Intent(context, activity_presunto_duroc_nacos_primor_300GR.class);
                 break;
             default:
                 break;

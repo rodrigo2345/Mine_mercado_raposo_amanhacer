@@ -28,6 +28,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.activity_presunto_duroc_nacos_primor_300GR"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_chourico_grosso_porco_preto_estremoz"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_chourico_grosso_porco_branco_estremoz"
+            android:exported="false" />
+        <activity
+            android:name=".view.MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".view.activity_nobre_fiambre_fatias_finas_100GR"
             android:exported="false" />
         <activity
