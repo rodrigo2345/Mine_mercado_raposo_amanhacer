@@ -20,9 +20,11 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_grosso_p
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_grosso_porco_preto_estremoz;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_farinheira_branca_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_fiambre_frango_FT_classicas_90GR;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_fiambre_pa_200GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_fiambre_peito_peru_forno_lenha_120GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_gato_mousse_purina_gourmet;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_linguica_Porco_alentejano_180GR;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_linguica_alentejana_180GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
@@ -212,6 +214,12 @@ public class ProductItem {
                 break;
             case "Painho Porco Preto AMANHECER 300GR":
                 intent = new Intent(context, activity_painho_porco_preto_300GR.class);
+                break;
+            case "Linguica Alentejana AMANHECER 180GR":
+                intent = new Intent(context, activity_linguica_alentejana_180GR.class);
+                break;
+            case "Fiambre da Pa AMANHECER 200GR":
+                intent = new Intent(context, activity_fiambre_pa_200GR.class);
                 break;
             default:
                 break;

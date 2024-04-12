@@ -28,6 +28,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.activity_fiambre_pa_200GR"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_linguica_alentejana_180GR"
+            android:exported="false" />
+        <activity
             android:name=".view.activity_painho_porco_preto_300GR"
             android:exported="false" />
         <activity
