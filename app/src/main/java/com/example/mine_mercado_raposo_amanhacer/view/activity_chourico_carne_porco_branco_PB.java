@@ -19,7 +19,8 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class activity_chourico_carne_porco_preto_PP extends AppCompatActivity {
+public class activity_chourico_carne_porco_branco_PB extends AppCompatActivity {
+
     private RecyclerView recyclerView;
     private ContactAdapter adapter;
     private List<Contact> carrinhoList;
@@ -27,10 +28,10 @@ public class activity_chourico_carne_porco_preto_PP extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chourico_carne_porco_preto_pp);
+        setContentView(R.layout.activity_chourico_carne_porco_branco_pb);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Chourico de Carne Porco Preto PP", "28,35€", R.drawable.chourico_carne_porco_preto_pp, 1));
-        recyclerView = findViewById(R.id.recyclerView_product21);
+        contactList.add(new Contact("Chourico de Carne Porco Branco PB", "16,85€", R.drawable.chourico_carne_porco_branco_pb, 1));
+        recyclerView = findViewById(R.id.recyclerView_product23);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);
@@ -54,12 +55,12 @@ public class activity_chourico_carne_porco_preto_PP extends AppCompatActivity {
     }
 
     public void Search(View view) {
-        Intent intent = new Intent(activity_chourico_carne_porco_preto_PP.this, PesquisaActivity.class);
+        Intent intent = new Intent(activity_chourico_carne_porco_branco_PB.this, PesquisaActivity.class);
         startActivity(intent);
     }
 
     public void Home(View view) {
-        Intent intent = new Intent(activity_chourico_carne_porco_preto_PP.this, MainActivity.class);
+        Intent intent = new Intent(activity_chourico_carne_porco_branco_PB.this, MainActivity.class);
         startActivity(intent);
     }
 }

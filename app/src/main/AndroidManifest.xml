@@ -28,6 +28,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.activity_chourico_carne_porco_branco_PB"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_toucinho_pedacos_sal_montanheira"
+            android:exported="false" />
+        <activity
             android:name=".view.activity_chourico_carne_porco_preto_PP"
             android:exported="false" />
         <activity

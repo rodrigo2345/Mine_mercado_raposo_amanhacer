@@ -10,6 +10,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_2kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_peixe_2kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_branco_PB;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_preto_PP;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_farinheira_branca_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_gato_mousse_purina_gourmet;
@@ -22,6 +23,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_peru_frango_purin
 import com.example.mine_mercado_raposo_amanhacer.view.activity_racao_seca_gato_friskies_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_adulto_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_junior_4kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_toucinho_pedacos_sal_montanheira;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_valouro_granulado_galinhas_poedeiras_30kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_valouro_granulado_galinhas_poedeiras_5kg;
 
@@ -136,6 +138,12 @@ public class ProductItem {
                 break;
             case "Chourico de Carne Porco Preto PP":
                 intent = new Intent(context, activity_chourico_carne_porco_preto_PP.class);
+                break;
+            case "Toucinho Pedacos com Sal Montanheira":
+                intent = new Intent(context, activity_toucinho_pedacos_sal_montanheira.class);
+                break;
+            case "Chourico de Carne Porco Branco PB":
+                intent = new Intent(context, activity_chourico_carne_porco_branco_PB.class);
                 break;
             default:
                 break;
