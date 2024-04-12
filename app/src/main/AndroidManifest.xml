@@ -28,6 +28,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.activity_nobre_paio_york_FT_90GR"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_nobre_chouricao_FT_100GR"
+            android:exported="false" />
+        <activity
             android:name=".view.activity_fiambre_peito_peru_forno_lenha_120GR"
             android:exported="false" />
         <activity

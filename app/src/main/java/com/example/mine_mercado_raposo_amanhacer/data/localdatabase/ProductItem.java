@@ -21,6 +21,8 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_morcela_porco_branco;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_chouricao_FT_100GR;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_paio_york_FT_90GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_presunto_fatiado_70GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_peru_frango_purina_friskies;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_probar_bacon_fumado_fatiado_75GR;
@@ -160,6 +162,12 @@ public class ProductItem {
                 break;
             case "Campofrio Fiambre Peito Peru Forno de Lenha Finas Fatiado 120GR":
                 intent = new Intent(context, activity_fiambre_peito_peru_forno_lenha_120GR.class);
+                break;
+            case "Nobre Chouricao FT 100GR":
+                intent = new Intent(context, activity_nobre_chouricao_FT_100GR.class);
+                break;
+            case "Nobre Paio York FT 90GR":
+                intent = new Intent(context, activity_nobre_paio_york_FT_90GR.class);
                 break;
             default:
                 break;
