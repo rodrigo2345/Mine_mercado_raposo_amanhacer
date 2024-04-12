@@ -10,6 +10,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_2kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_peixe_2kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_farinheira_branca_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_gato_mousse_purina_gourmet;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
@@ -124,6 +125,9 @@ public class ProductItem {
                 break;
             case "Avenal Racao Seca de Gato Cereais Carne 4KG":
                 intent = new Intent(context, activity_avenal_racao_seca_gato_cereais_carne_4kg.class);
+                break;
+            case "Farinheira Branca Porco Branco":
+                intent = new Intent(context, activity_farinheira_branca_porco_branco.class);
                 break;
             default:
                 break;
