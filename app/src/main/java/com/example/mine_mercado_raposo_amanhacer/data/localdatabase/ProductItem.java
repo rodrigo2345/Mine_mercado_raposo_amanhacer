@@ -10,12 +10,14 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_2kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_peixe_2kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_bacon_fumado_extra_pedacos_probar_190GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_bacon_primor_nacos_200GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_branco_PB;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_preto_PP;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_grosso_porco_branco_estremoz;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_grosso_porco_preto_estremoz;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_farinheira_branca_porco_branco;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_fiambre_frango_FT_classicas_90GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_fiambre_peito_peru_forno_lenha_120GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_gato_mousse_purina_gourmet;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
@@ -184,6 +186,12 @@ public class ProductItem {
                 break;
             case "Presunto Duroc Sem Ossos Nacos Primor 300GR":
                 intent = new Intent(context, activity_presunto_duroc_nacos_primor_300GR.class);
+                break;
+            case "Bacon Fumado Extra Pedacos Probar 190GR":
+                intent = new Intent(context, activity_bacon_fumado_extra_pedacos_probar_190GR.class);
+                break;
+            case "Fiambre Frango FT Classicas 90GR":
+                intent = new Intent(context, activity_fiambre_frango_FT_classicas_90GR.class);
                 break;
             default:
                 break;

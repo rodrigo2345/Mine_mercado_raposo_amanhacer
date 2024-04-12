@@ -28,6 +28,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.activity_fiambre_frango_FT_classicas_90GR"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_bacon_fumado_extra_pedacos_probar_190GR"
+            android:exported="false" />
+        <activity
             android:name=".view.activity_presunto_duroc_nacos_primor_300GR"
             android:exported="false" />
         <activity
