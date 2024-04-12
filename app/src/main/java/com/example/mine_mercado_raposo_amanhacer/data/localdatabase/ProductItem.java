@@ -71,10 +71,10 @@ public class ProductItem {
         Intent intent = new Intent();
 
         switch (productName) {
-            case "Arroz Agulha AMACHECER":
+            case "Arroz Agulha AMANHECER":
                 intent = new Intent(context, activity_Arroz_Agulha_amanhecer.class);
                 break;
-            case "Poupa de Tomate AMACHECER":
+            case "Poupa de Tomate AMANHECER":
                 intent = new Intent(context, activity_Poupa_Tomate_amanhecer.class);
                 break;
             case "Milho Partido 25KG":
