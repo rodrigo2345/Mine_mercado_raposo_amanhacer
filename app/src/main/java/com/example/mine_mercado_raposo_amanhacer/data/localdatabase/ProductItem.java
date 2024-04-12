@@ -12,6 +12,8 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_peixe_2kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_bacon_fumado_extra_pedacos_probar_190GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_bacon_primor_nacos_200GR;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_banha_porco_235GR;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_campofrio_fiambre_peru_finissimo_FT;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_branco_PB;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_preto_PP;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_grosso_porco_branco_estremoz;
@@ -20,6 +22,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_farinheira_branca
 import com.example.mine_mercado_raposo_amanhacer.view.activity_fiambre_frango_FT_classicas_90GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_fiambre_peito_peru_forno_lenha_120GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_gato_mousse_purina_gourmet;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_linguica_Porco_alentejano_180GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
@@ -29,8 +32,10 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_chouricao_F
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_fiambre_fatias_finas_100GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_paio_york_FT_90GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_presunto_fatiado_70GR;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_painho_porco_preto_300GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_peru_frango_purina_friskies;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_presunto_duroc_nacos_primor_300GR;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_presunto_serrano_cura_FT_200GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_probar_bacon_fumado_fatiado_75GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_racao_seca_gato_friskies_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_adulto_4kg;
@@ -192,6 +197,21 @@ public class ProductItem {
                 break;
             case "Fiambre Frango FT Classicas 90GR":
                 intent = new Intent(context, activity_fiambre_frango_FT_classicas_90GR.class);
+                break;
+            case "Presunto Serrano 9 Meses Cura AMANHECER FT 200GR":
+                intent = new Intent(context, activity_presunto_serrano_cura_FT_200GR.class);
+                break;
+            case "Linguica Porco Alentejano AMANHECER 180 GR":
+                intent = new Intent(context, activity_linguica_Porco_alentejano_180GR.class);
+                break;
+            case "Banha de Porco 235GR":
+                intent = new Intent(context, activity_banha_porco_235GR.class);
+                break;
+            case "Campofrio Fiambre Peru Finissimo FT":
+                intent = new Intent(context, activity_campofrio_fiambre_peru_finissimo_FT.class);
+                break;
+            case "Painho Porco Preto AMANHECER 300GR":
+                intent = new Intent(context, activity_painho_porco_preto_300GR.class);
                 break;
             default:
                 break;

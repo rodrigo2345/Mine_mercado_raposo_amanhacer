@@ -28,6 +28,21 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.activity_painho_porco_preto_300GR"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_campofrio_fiambre_peru_finissimo_FT"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_banha_porco_235GR"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_linguica_Porco_alentejano_180GR"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity_presunto_serrano_cura_FT_200GR"
+            android:exported="false" />
+        <activity
             android:name=".view.activity_fiambre_frango_FT_classicas_90GR"
             android:exported="false" />
         <activity
