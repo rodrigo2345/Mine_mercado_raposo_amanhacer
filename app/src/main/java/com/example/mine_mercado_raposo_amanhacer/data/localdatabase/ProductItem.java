@@ -14,6 +14,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_bacon_primor_naco
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_branco_PB;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_preto_PP;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_farinheira_branca_porco_branco;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_fiambre_peito_peru_forno_lenha_120GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_gato_mousse_purina_gourmet;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg;
@@ -22,6 +23,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_p
 import com.example.mine_mercado_raposo_amanhacer.view.activity_morcela_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_presunto_fatiado_70GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_peru_frango_purina_friskies;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_probar_bacon_fumado_fatiado_75GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_racao_seca_gato_friskies_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_adulto_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_junior_4kg;
@@ -152,6 +154,12 @@ public class ProductItem {
                 break;
             case "Nobre Presunto Fatiado 70GR":
                 intent = new Intent(context, activity_nobre_presunto_fatiado_70GR.class);
+                break;
+            case "Probar Bacon Fumado Fatiado 75GR":
+                intent = new Intent(context, activity_probar_bacon_fumado_fatiado_75GR.class);
+                break;
+            case "Campofrio Fiambre Peito Peru Forno de Lenha Finas Fatiado 120GR":
+                intent = new Intent(context, activity_fiambre_peito_peru_forno_lenha_120GR.class);
                 break;
             default:
                 break;
