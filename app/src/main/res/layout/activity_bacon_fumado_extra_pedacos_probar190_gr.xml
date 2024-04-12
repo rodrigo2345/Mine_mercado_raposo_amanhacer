@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_bacon_fumado_extra_pedacos_probar_190GR">
+    tools:context=".produtos.activity_bacon_fumado_extra_pedacos_probar_190GR">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

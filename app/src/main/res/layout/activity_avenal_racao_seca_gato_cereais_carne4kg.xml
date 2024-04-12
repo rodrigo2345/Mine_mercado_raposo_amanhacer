@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_avenal_racao_seca_gato_cereais_carne_4kg">
+    tools:context=".produtos.activity_avenal_racao_seca_gato_cereais_carne_4kg">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

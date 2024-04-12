@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_campofrio_fiambre_peru_finissimo_FT">
+    tools:context=".produtos.activity_campofrio_fiambre_peru_finissimo_FT">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

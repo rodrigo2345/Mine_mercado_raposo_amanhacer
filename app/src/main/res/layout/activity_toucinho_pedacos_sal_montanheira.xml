@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_toucinho_pedacos_sal_montanheira">
+    tools:context=".produtos.activity_toucinho_pedacos_sal_montanheira">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

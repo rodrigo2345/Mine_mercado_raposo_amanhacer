@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_presunto_serrano_cura_FT_200GR">
+    tools:context=".produtos.activity_presunto_serrano_cura_FT_200GR">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

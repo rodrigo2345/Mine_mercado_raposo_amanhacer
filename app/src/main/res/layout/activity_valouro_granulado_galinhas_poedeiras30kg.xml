@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_valouro_granulado_galinhas_poedeiras_30kg">
+    tools:context=".produtos.activity_valouro_granulado_galinhas_poedeiras_30kg">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

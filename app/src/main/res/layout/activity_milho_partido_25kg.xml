@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_milho_partido_25kg">
+    tools:context=".produtos.activity_milho_partido_25kg">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

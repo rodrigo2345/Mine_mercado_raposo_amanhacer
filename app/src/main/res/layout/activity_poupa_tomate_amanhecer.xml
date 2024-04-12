@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_Arroz_Agulha_amanhecer">
+    tools:context=".produtos.activity_Arroz_Agulha_amanhecer">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_spike_racao_seca_cao_junior_4kg">
+    tools:context=".produtos.activity_spike_racao_seca_cao_junior_4kg">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

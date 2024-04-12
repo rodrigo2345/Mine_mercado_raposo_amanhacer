@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_nobre_fiambre_fatias_finas_100GR">
+    tools:context=".produtos.activity_nobre_fiambre_fatias_finas_100GR">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

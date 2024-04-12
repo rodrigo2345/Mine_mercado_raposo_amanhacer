@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_avenal_basic_racao_seca_cao_adulto_20kg">
+    tools:context=".produtos.activity_avenal_basic_racao_seca_cao_adulto_20kg">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_nobre_paio_york_FT_90GR">
+    tools:context=".produtos.activity_nobre_paio_york_FT_90GR">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

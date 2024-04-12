@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".view.activity_presunto_duroc_nacos_primor_300GR">
+    tools:context=".produtos.activity_presunto_duroc_nacos_primor_300GR">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
