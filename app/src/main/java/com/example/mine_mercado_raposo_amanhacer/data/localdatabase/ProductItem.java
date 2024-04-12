@@ -10,6 +10,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_2kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_cereais_carne_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_avenal_racao_seca_gato_peixe_2kg;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_bacon_primor_nacos_200GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_branco_PB;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_chourico_carne_porco_preto_PP;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_farinheira_branca_porco_branco;
@@ -19,6 +20,7 @@ import com.example.mine_mercado_raposo_amanhacer.view.activity_milho_partido_5kg
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_25kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_mistura_cereais_para_aves_5kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_morcela_porco_branco;
+import com.example.mine_mercado_raposo_amanhacer.view.activity_nobre_presunto_fatiado_70GR;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_peru_frango_purina_friskies;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_racao_seca_gato_friskies_4kg;
 import com.example.mine_mercado_raposo_amanhacer.view.activity_spike_racao_seca_cao_adulto_4kg;
@@ -144,6 +146,12 @@ public class ProductItem {
                 break;
             case "Chourico de Carne Porco Branco PB":
                 intent = new Intent(context, activity_chourico_carne_porco_branco_PB.class);
+                break;
+            case "Bacon Primor Nacos S Couro 200GR":
+                intent = new Intent(context, activity_bacon_primor_nacos_200GR.class);
+                break;
+            case "Nobre Presunto Fatiado 70GR":
+                intent = new Intent(context, activity_nobre_presunto_fatiado_70GR.class);
                 break;
             default:
                 break;
