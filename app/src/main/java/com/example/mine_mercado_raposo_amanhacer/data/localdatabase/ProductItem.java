@@ -216,10 +216,10 @@ public class ProductItem {
             case "Fiambre Frango FT Classicas 90GR":
                 intent = new Intent(context, activity_fiambre_frango_FT_classicas_90GR.class);
                 break;
-            case "Presunto Serrano 9 Meses Cura AMANHECER FT 200GR":
+            case "Presunto Serrano 9 Meses Cura FT 200GR":
                 intent = new Intent(context, activity_presunto_serrano_cura_FT_200GR.class);
                 break;
-            case "Linguica Porco Alentejano AMANHECER 180 GR":
+            case "Linguica Porco Alentejano 180GR":
                 intent = new Intent(context, activity_linguica_Porco_alentejano_180GR.class);
                 break;
             case "Banha de Porco 235GR":
@@ -228,13 +228,13 @@ public class ProductItem {
             case "Campofrio Fiambre Peru Finissimo FT":
                 intent = new Intent(context, activity_campofrio_fiambre_peru_finissimo_FT.class);
                 break;
-            case "Painho Porco Preto AMANHECER 300GR":
+            case "Painho Porco Preto 300GR":
                 intent = new Intent(context, activity_painho_porco_preto_300GR.class);
                 break;
-            case "Linguica Alentejana AMANHECER 180GR":
+            case "Linguica Alentejana 180GR":
                 intent = new Intent(context, activity_linguica_alentejana_180GR.class);
                 break;
-            case "Fiambre da Pa AMANHECER 200GR":
+            case "Fiambre da Pa 200GR":
                 intent = new Intent(context, activity_fiambre_pa_200GR.class);
                 break;
             case "Racao Pintos Iniciacao 104 Mic.Valouro 5KG":
