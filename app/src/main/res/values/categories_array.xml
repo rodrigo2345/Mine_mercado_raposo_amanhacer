@@ -9,7 +9,7 @@
 
     <!-- Array de subcategorias para Alimento de Animais -->
     <string-array name="subcategories_alimento_animais_array">
-        <item>Cães</item>
+        <item>Caes</item>
         <item>Gatos</item>
         <item>Aves</item>
     </string-array>
