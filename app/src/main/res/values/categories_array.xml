@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="categories_array">
+        <item>Todos</item>
+        <item>Amanhecer</item>
+        <item>Aves</item>
+        <item>Caes</item>
+        <item>Gatos</item>
+        <item>Charcutaria</item>
+    </string-array>
+</resources>

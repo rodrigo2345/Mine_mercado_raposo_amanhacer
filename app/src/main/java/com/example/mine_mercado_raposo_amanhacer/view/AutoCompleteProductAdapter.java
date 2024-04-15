@@ -23,10 +23,8 @@ import java.util.List;
 public class AutoCompleteProductAdapter extends ArrayAdapter<ProductItem> implements Filterable {
 
     private List<ProductItem> productListFull;
-    private List<ProductItem> productListFiltered = new ArrayList<>();;
-
+    private List<ProductItem> productListFiltered = new ArrayList<>();
     private OnProductItemClickListener onProductItemClickListener;
-
     private Context context;
 
     public AutoCompleteProductAdapter(Context context) {
@@ -57,17 +55,20 @@ public class AutoCompleteProductAdapter extends ArrayAdapter<ProductItem> implem
         return productListFiltered.get(position);
     }
 
+    @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.product_autocomplete_row, parent, false);
         }
 
         TextView productNameTextView = convertView.findViewById(R.id.product_name);
+        TextView productCategoryTextView = convertView.findViewById(R.id.product_category);
         ImageView productImageView = convertView.findViewById(R.id.product_image);
 
         ProductItem product = getItem(position);
         if (product != null) {
             productNameTextView.setText(product.getProductName());
+            productCategoryTextView.setText(product.getCategory());
 
             Glide.with(context)
                     .load(product.getFlagImage())
@@ -91,10 +92,11 @@ public class AutoCompleteProductAdapter extends ArrayAdapter<ProductItem> implem
                 String filterPattern = constraint.toString().toLowerCase().trim();
                 List<ProductItem> filteredList = new ArrayList<>();
 
-                for (ProductItem restaurant : productListFull) {
-                    if (restaurant != null && restaurant.getProductName() != null &&
-                            restaurant.getProductName().toLowerCase().contains(filterPattern)) {
-                        filteredList.add(restaurant);
+                for (ProductItem product : productListFull) {
+                    if (product != null && product.getProductName() != null &&
+                            (product.getProductName().toLowerCase().contains(filterPattern) ||
+                                    product.getCategory().toLowerCase().contains(filterPattern))) {
+                        filteredList.add(product);
                     }
                 }
 
@@ -107,7 +109,7 @@ public class AutoCompleteProductAdapter extends ArrayAdapter<ProductItem> implem
 
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
-           productListFiltered = (List<ProductItem>) results.values;
+            productListFiltered = (List<ProductItem>) results.values;
 
             if (results.count > 0) {
                 notifyDataSetChanged();
@@ -131,4 +133,3 @@ public class AutoCompleteProductAdapter extends ArrayAdapter<ProductItem> implem
         void onProductItemClick(ProductItem productItem);
     }
 }
-

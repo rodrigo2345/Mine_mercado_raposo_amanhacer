@@ -51,11 +51,21 @@ public class ProductItem {
     private int id;
     private String productName;
     private String flagImage;
+    private String category;
 
-    public ProductItem(int id, String productName, String flagImage) {
+    public ProductItem(int id, String productName, String flagImage, String category) {
         this.id = id;
         this.productName = productName;
         this.flagImage = flagImage;
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public int getId() {
@@ -95,10 +105,10 @@ public class ProductItem {
         Intent intent = new Intent();
 
         switch (productName) {
-            case "Arroz Agulha AMANHECER":
+            case "Arroz Agulha":
                 intent = new Intent(context, activity_Arroz_Agulha_amanhecer.class);
                 break;
-            case "Poupa de Tomate AMANHECER":
+            case "Poupa de Tomate":
                 intent = new Intent(context, activity_Poupa_Tomate_amanhecer.class);
                 break;
             case "Milho Partido 25KG":

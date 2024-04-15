@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClientInstance {
 
     private static Retrofit retrofit;
-    private static final String BASE_URL = "https://retoolapi.dev/q5DWfK/";
+    private static final String BASE_URL = "https://retoolapi.dev/oIu3cS/";
     public static Retrofit getRetrofitInstance() {
         if (retrofit == null) {
             // Create an OkHttp client with the HttpLoggingInterceptor
