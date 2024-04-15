@@ -28,6 +28,24 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".produtos.activity_bacon_nacos_200GR"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_fiambre_perna_economico"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_casca_ostra_1KG"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_mistura_canarios_1KG"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_milho_inteiro_5KG"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_racao_pintos_104_valouro_5KG"
+            android:exported="false" />
+        <activity
             android:name=".produtos.activity_fiambre_pa_200GR"
             android:exported="false" />
         <activity
