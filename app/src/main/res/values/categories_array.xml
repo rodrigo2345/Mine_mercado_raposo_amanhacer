@@ -1,6 +1,7 @@
 <resources>
     <!-- Array de categorias -->
     <string-array name="categories_array">
+        <item>Todos</item>
         <item>Amanhecer</item>
         <item>Alimento de Animais</item>
         <item>Charcutaria</item>
