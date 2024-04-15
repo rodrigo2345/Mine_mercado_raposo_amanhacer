@@ -1,7 +1,9 @@
 package com.example.mine_mercado_raposo_amanhacer.view;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -29,6 +31,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
+
 public class PesquisaActivity extends AppCompatActivity {
 
     private List<ProductItem> productList = new ArrayList<>();
@@ -48,8 +52,18 @@ public class PesquisaActivity extends AppCompatActivity {
         categorySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
-                selectedCategory = adapterView.getItemAtPosition(position).toString();
-                filterProductsAndUpdateList("");
+                String newlySelectedCategory = adapterView.getItemAtPosition(position).toString();
+                if (!newlySelectedCategory.equalsIgnoreCase(selectedCategory)) {
+                    selectedCategory = newlySelectedCategory;
+                    if (selectedCategory.equalsIgnoreCase("Bebidas")) {
+                        showSubcategoriesDialog(R.array.subcategories_bebidas_array);
+                    } else if (selectedCategory.equalsIgnoreCase("Alimento de Animais")) {
+                        showSubcategoriesDialog(R.array.subcategories_alimento_animais_array);
+                    } else {
+                        // Se a categoria não requer subcategorias, filtramos diretamente os produtos
+                        filterProductsAndUpdateList("");
+                    }
+                }
             }
 
             @Override
@@ -74,10 +88,23 @@ public class PesquisaActivity extends AppCompatActivity {
         autoCompleteAdapter.setOnProductItemClickListener(productItem -> openProductClassification(productItem));
     }
 
+    private void showSubcategoriesDialog(int subcategoriesArrayId) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Selecione uma subcategoria");
+        ArrayAdapter<CharSequence> subcategoryAdapter = ArrayAdapter.createFromResource(this, subcategoriesArrayId, android.R.layout.simple_spinner_item);
+        builder.setAdapter(subcategoryAdapter, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                String selectedSubcategory = subcategoryAdapter.getItem(i).toString();
+                filterProductsAndUpdateList(selectedSubcategory);
+            }
+        });
+        builder.create().show();
+    }
+
     private void fetchProductsFromAPI() {
         ProductService service = RetrofitClientInstance.getRetrofitInstance().create(ProductService.class);
         Call<List<ProductItem>> call = service.getProduct();
-
 
         call.enqueue(new Callback<List<ProductItem>>() {
             @Override
@@ -103,6 +130,7 @@ public class PesquisaActivity extends AppCompatActivity {
             if (selectedCategory.equalsIgnoreCase("Todos")) {
                 autoCompleteAdapter.updateList(productList);
             } else {
+                // Se a categoria selecionada for diferente de "Todos", filtramos por categoria
                 List<ProductItem> filteredList = new ArrayList<>();
                 for (ProductItem product : productList) {
                     if (product.getCategory() != null && product.getCategory().equalsIgnoreCase(selectedCategory)) {
@@ -115,22 +143,9 @@ public class PesquisaActivity extends AppCompatActivity {
             // Se um filtro estiver sendo aplicado, filtre a lista com base no filtro fornecido
             List<ProductItem> filteredList = new ArrayList<>();
             for (ProductItem product : productList) {
-                if (product.getProductName() != null && product.getProductName().equalsIgnoreCase(filter.toLowerCase())) {
-                    filteredList.add(product);
-                }
-            }
-            autoCompleteAdapter.updateList(filteredList);
-        }
-    }
-
-
-    private void updateListByCategory(String category) {
-        if (TextUtils.isEmpty(category)) {
-            autoCompleteAdapter.updateList(productList);
-        } else {
-            List<ProductItem> filteredList = new ArrayList<>();
-            for (ProductItem product : productList) {
-                if (product.getCategory() != null && product.getCategory().equalsIgnoreCase(category)) {
+                // Verifique se o produto pertence à categoria selecionada e à subcategoria (se aplicável)
+                if (product.getCategory() != null && product.getCategory().equalsIgnoreCase(selectedCategory)
+                        && product.getSubcategory() != null && product.getSubcategory().equalsIgnoreCase(filter)) {
                     filteredList.add(product);
                 }
             }

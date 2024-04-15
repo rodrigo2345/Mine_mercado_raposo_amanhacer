@@ -28,6 +28,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".produtos.activity_sumo_amigo_morango_200ML"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_pepsi_regular"
+            android:exported="false" />
+        <activity
             android:name=".produtos.activity_bacon_nacos_200GR"
             android:exported="false" />
         <activity

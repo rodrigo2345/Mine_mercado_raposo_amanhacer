@@ -37,6 +37,7 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_nobre_fiambre
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_nobre_paio_york_FT_90GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_nobre_presunto_fatiado_70GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_painho_porco_preto_300GR;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_pepsi_regular;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_peru_frango_purina_friskies;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_presunto_duroc_nacos_primor_300GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_presunto_serrano_cura_FT_200GR;
@@ -45,6 +46,7 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_racao_pintos_
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_racao_seca_gato_friskies_4kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_spike_racao_seca_cao_adulto_4kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_spike_racao_seca_cao_junior_4kg;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_sumo_amigo_morango_200ML;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_toucinho_pedacos_sal_montanheira;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_valouro_granulado_galinhas_poedeiras_30kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_valouro_granulado_galinhas_poedeiras_5kg;
@@ -58,12 +60,14 @@ public class ProductItem {
     private String productName;
     private String flagImage;
     private String category;
+    private String subcategory;
 
-    public ProductItem(int id, String productName, String flagImage, String category) {
+    public ProductItem(int id, String productName, String flagImage, String category, String subcategory) {
         this.id = id;
         this.productName = productName;
         this.flagImage = flagImage;
         this.category = category;
+        this.subcategory = subcategory;
     }
 
     public String getCategory() {
@@ -72,6 +76,14 @@ public class ProductItem {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getSubcategory() {
+        return subcategory;
+    }
+
+    public void setSubcategory(String subcategory) {
+        this.subcategory = subcategory;
     }
 
     public int getId() {
@@ -100,13 +112,14 @@ public class ProductItem {
 
     @Override
     public String toString() {
-        return "RestaurantItem{" +
+        return "ProductItem{" +
                 "id=" + id +
-                ", ProductName='" + productName + '\'' +
+                ", productName='" + productName + '\'' +
                 ", flagImage='" + flagImage + '\'' +
+                ", category='" + category + '\'' +
+                ", subcategory='" + subcategory + '\'' +
                 '}';
     }
-
     public Intent getIntentForProduct(Context context) {
         Intent intent = new Intent();
 
@@ -254,6 +267,12 @@ public class ProductItem {
                 break;
             case "Bacon Probar Nacos Boa Escolha 200GR":
                 intent = new Intent(context, activity_bacon_nacos_200GR.class);
+                break;
+            case "Pepsi Regular 1,75LT":
+                intent = new Intent(context, activity_pepsi_regular.class);
+                break;
+            case "Sumo Amigo de Morango 200ML":
+                intent = new Intent(context, activity_sumo_amigo_morango_200ML.class);
                 break;
             default:
                 break;

@@ -45,7 +45,8 @@ public class AutoCompleteProductAdapter extends ArrayAdapter<ProductItem> implem
     }
 
     public void updateList(List<ProductItem> newList) {
-        productListFull = newList;
+        productListFull.clear();
+        productListFull.addAll(newList);
         getFilter().filter("");
     }
 
