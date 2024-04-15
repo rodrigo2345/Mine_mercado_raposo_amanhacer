@@ -24,6 +24,10 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_farinheira_br
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_frango_FT_classicas_90GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_pa_200GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_peito_peru_forno_lenha_120GR;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_garrafa_butano_13KG_rubis;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_garrafa_cepsa;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_garrafa_tuti_11KG;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_garrafa_tuti_13KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_gato_mousse_purina_gourmet;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_linguica_Porco_alentejano_180GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_linguica_alentejana_180GR;
@@ -273,6 +277,18 @@ public class ProductItem {
                 break;
             case "Sumo Amigo de Morango 200ML":
                 intent = new Intent(context, activity_sumo_amigo_morango_200ML.class);
+                break;
+            case "Garrafa Cepsa 12,5KG":
+                intent = new Intent(context, activity_garrafa_cepsa.class);
+                break;
+            case "Garrafa Tuti 11KG":
+                intent = new Intent(context, activity_garrafa_tuti_11KG.class);
+                break;
+            case "Garrafa Tuti 13KG":
+                intent = new Intent(context, activity_garrafa_tuti_13KG.class);
+                break;
+            case "Garrafa Butano 13KG Rubis":
+                intent = new Intent(context, activity_garrafa_butano_13KG_rubis.class);
                 break;
             default:
                 break;

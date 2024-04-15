@@ -28,6 +28,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".produtos.activity_garrafa_butano_13KG_rubis"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_garrafa_tuti_13KG"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_garrafa_tuti_11KG"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_garrafa_cepsa"
+            android:exported="false" />
+        <activity
             android:name=".produtos.activity_sumo_amigo_morango_200ML"
             android:exported="false" />
         <activity

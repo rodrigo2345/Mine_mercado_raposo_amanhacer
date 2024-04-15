@@ -59,7 +59,8 @@ public class PesquisaActivity extends AppCompatActivity {
                         showSubcategoriesDialog(R.array.subcategories_bebidas_array);
                     } else if (selectedCategory.equalsIgnoreCase("Alimento de Animais")) {
                         showSubcategoriesDialog(R.array.subcategories_alimento_animais_array);
-                    } else {
+                    }
+                    else {
                         filterProductsAndUpdateList("");
                     }
                 }
