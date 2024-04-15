@@ -1,5 +1,4 @@
 <resources>
-    <!-- Array de categorias -->
     <string-array name="categories_array">
         <item>Todos</item>
         <item>Amanhecer</item>
@@ -8,22 +7,15 @@
         <item>Bebidas</item>
     </string-array>
 
-    <!-- Array de subcategorias para Alimento de Animais -->
     <string-array name="subcategories_alimento_animais_array">
         <item>Caes</item>
         <item>Gatos</item>
         <item>Aves</item>
     </string-array>
 
-    <!-- Array de subcategorias para Bebidas -->
     <string-array name="subcategories_bebidas_array">
         <item>Cerveja</item>
         <item>Refrigerantes</item>
         <item>Sumos</item>
-    </string-array>
-
-    <!-- Array de subcategorias como marcador de posição (quando nenhuma categoria é selecionada) -->
-    <string-array name="subcategories_placeholder_array">
-        <item>Selecione uma categoria primeiro</item>
     </string-array>
 </resources>

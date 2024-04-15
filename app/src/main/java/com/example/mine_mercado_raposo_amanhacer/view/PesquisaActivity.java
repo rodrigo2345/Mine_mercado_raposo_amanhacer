@@ -60,7 +60,6 @@ public class PesquisaActivity extends AppCompatActivity {
                     } else if (selectedCategory.equalsIgnoreCase("Alimento de Animais")) {
                         showSubcategoriesDialog(R.array.subcategories_alimento_animais_array);
                     } else {
-                        // Se a categoria não requer subcategorias, filtramos diretamente os produtos
                         filterProductsAndUpdateList("");
                     }
                 }
@@ -130,7 +129,6 @@ public class PesquisaActivity extends AppCompatActivity {
             if (selectedCategory.equalsIgnoreCase("Todos")) {
                 autoCompleteAdapter.updateList(productList);
             } else {
-                // Se a categoria selecionada for diferente de "Todos", filtramos por categoria
                 List<ProductItem> filteredList = new ArrayList<>();
                 for (ProductItem product : productList) {
                     if (product.getCategory() != null && product.getCategory().equalsIgnoreCase(selectedCategory)) {
@@ -140,10 +138,8 @@ public class PesquisaActivity extends AppCompatActivity {
                 autoCompleteAdapter.updateList(filteredList);
             }
         } else {
-            // Se um filtro estiver sendo aplicado, filtre a lista com base no filtro fornecido
             List<ProductItem> filteredList = new ArrayList<>();
             for (ProductItem product : productList) {
-                // Verifique se o produto pertence à categoria selecionada e à subcategoria (se aplicável)
                 if (product.getCategory() != null && product.getCategory().equalsIgnoreCase(selectedCategory)
                         && product.getSubcategory() != null && product.getSubcategory().equalsIgnoreCase(filter)) {
                     filteredList.add(product);
