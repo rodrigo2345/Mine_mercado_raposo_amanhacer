@@ -31,7 +31,7 @@ public class activity_garrafa_cepsa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garrafa_cepsa);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Garrafa Cepsa 12,5KG", "32,00€", R.drawable.garrafa_cepsa, 1));
+        contactList.add(new Contact("Garrafa Cepsa 12,5KG", "32,00€","" , R.drawable.garrafa_cepsa, 1));
         recyclerView = findViewById(R.id.recyclerView_product51);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

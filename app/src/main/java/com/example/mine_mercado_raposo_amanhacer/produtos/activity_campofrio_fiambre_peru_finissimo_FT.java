@@ -31,7 +31,7 @@ public class activity_campofrio_fiambre_peru_finissimo_FT extends AppCompatActiv
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_campofrio_fiambre_peru_finissimo_ft);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Campofrio Fiambre Peru Finissimo FT", "1,40€", R.drawable.campofrio_fiambre_peru_finissimo_ft, 1));
+        contactList.add(new Contact("Campofrio Fiambre Peru Finissimo FT", "1,40€","" , R.drawable.campofrio_fiambre_peru_finissimo_ft, 1));
         recyclerView = findViewById(R.id.recyclerView_product39);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

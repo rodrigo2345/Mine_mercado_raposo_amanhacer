@@ -31,7 +31,7 @@ public class activity_chourico_grosso_porco_branco_estremoz extends AppCompatAct
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chourico_grosso_porco_branco_estremoz);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Chourico Grosso Porco Branco Estremoz", "27,30€", R.drawable.chourico_grosso_porco_branco_estremoz, 1));
+        contactList.add(new Contact("Chourico Grosso Porco Branco Estremoz", "27,30€","Descrição do produto - Preço do Kilo" , R.drawable.chourico_grosso_porco_branco_estremoz, 1));
         recyclerView = findViewById(R.id.recyclerView_product31);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

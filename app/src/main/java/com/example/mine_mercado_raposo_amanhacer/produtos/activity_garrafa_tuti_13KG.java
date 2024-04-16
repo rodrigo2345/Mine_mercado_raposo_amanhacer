@@ -31,7 +31,7 @@ public class activity_garrafa_tuti_13KG extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garrafa_tuti13_kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Garrafa Tuti 13KG", "29,90€", R.drawable.garrafa_tuti_13kg, 1));
+        contactList.add(new Contact("Garrafa Tuti 13KG", "29,90€","" , R.drawable.garrafa_tuti_13kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product53);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

@@ -33,7 +33,7 @@ public class activity_racao_seca_gato_friskies_4kg extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_racao_seca_gato_friskies4kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Racao Seca de Gato Friskies 4KG", "13,99€", R.drawable.racao_seca_gato_friskies_4kg, 1));
+        contactList.add(new Contact("Racao Seca de Gato Friskies 4KG", "13,99€","" , R.drawable.racao_seca_gato_friskies_4kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product16);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

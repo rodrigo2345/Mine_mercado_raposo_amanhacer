@@ -33,7 +33,7 @@ public class activity_chourico_carne_porco_branco_PB extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chourico_carne_porco_branco_pb);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Chourico de Carne Porco Branco PB", "16,85€", R.drawable.chourico_carne_porco_branco_pb, 1));
+        contactList.add(new Contact("Chourico de Carne Porco Branco PB", "16,85€","Descrição do produto - Preço do Kilo" , R.drawable.chourico_carne_porco_branco_pb, 1));
         recyclerView = findViewById(R.id.recyclerView_product23);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

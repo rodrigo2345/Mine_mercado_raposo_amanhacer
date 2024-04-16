@@ -33,7 +33,7 @@ public class activity_bacon_primor_nacos_200GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bacon_primor_nacos200_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Bacon Primor Nacos S/Couro 200GR", "4,99€", R.drawable.bacon_primor_nacos_200gr, 1));
+        contactList.add(new Contact("Bacon Primor Nacos S/Couro 200GR", "4,99€","" , R.drawable.bacon_primor_nacos_200gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product24);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

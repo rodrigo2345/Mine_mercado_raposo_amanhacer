@@ -31,7 +31,7 @@ public class activity_linguica_alentejana_180GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linguica_alentejana180_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Linguica Alentejana AMANHECER 180GR", "2,49€", R.drawable.linguica_alentejana_180gr, 1));
+        contactList.add(new Contact("Linguica Alentejana AMANHECER 180GR", "2,49€","" , R.drawable.linguica_alentejana_180gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product41);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

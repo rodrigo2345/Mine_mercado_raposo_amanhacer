@@ -31,7 +31,7 @@ public class activity_bacon_fumado_extra_pedacos_probar_190GR extends AppCompatA
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bacon_fumado_extra_pedacos_probar190_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Bacon Fumado Extra Pedacos Probar 190GR", "3,75€", R.drawable.bacon_fumado_extra_pedacos_probar_190gr, 1));
+        contactList.add(new Contact("Bacon Fumado Extra Pedacos Probar 190GR", "3,75€","" , R.drawable.bacon_fumado_extra_pedacos_probar_190gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product34);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

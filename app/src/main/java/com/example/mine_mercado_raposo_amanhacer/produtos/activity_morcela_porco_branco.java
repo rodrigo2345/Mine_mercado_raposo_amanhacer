@@ -33,7 +33,7 @@ public class activity_morcela_porco_branco extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_morcela_porco_branco);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Morcela Porco Branco", "14,65€", R.drawable.morcela_porco_branco, 1));
+        contactList.add(new Contact("Morcela Porco Branco", "14,65€","Descrição do produto - Preço do Kilo" , R.drawable.morcela_porco_branco, 1));
         recyclerView = findViewById(R.id.recyclerView_product20);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

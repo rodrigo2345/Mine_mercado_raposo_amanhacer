@@ -31,7 +31,7 @@ public class activity_fiambre_frango_FT_classicas_90GR extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fiambre_frango_ft_classicas90_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Fiambre Frango FT Classicas 90GR", "1,40€", R.drawable.fiambre_frango_ft_classicas_90gr, 1));
+        contactList.add(new Contact("Fiambre Frango FT Classicas 90GR", "1,40€","", R.drawable.fiambre_frango_ft_classicas_90gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product35);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

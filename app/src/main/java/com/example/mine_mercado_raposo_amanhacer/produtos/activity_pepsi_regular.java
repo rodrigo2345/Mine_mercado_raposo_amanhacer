@@ -31,7 +31,7 @@ public class activity_pepsi_regular extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pepsi_regular);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Pepsi Regular 1,75LT", "2,71€", R.drawable.pepsi_regular, 1));
+        contactList.add(new Contact("Pepsi Regular 1,75LT", "2,71€","" , R.drawable.pepsi_regular, 1));
         recyclerView = findViewById(R.id.recyclerView_product49);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

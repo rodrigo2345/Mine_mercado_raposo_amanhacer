@@ -31,7 +31,7 @@ public class activity_garrafa_butano_13KG_rubis extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garrafa_butano13_kg_rubis);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Garrafa Butano 13KG Rubis", "33,70€", R.drawable.garrafa_butano_13kg_rubis, 1));
+        contactList.add(new Contact("Garrafa Butano 13KG Rubis", "33,70€","" , R.drawable.garrafa_butano_13kg_rubis, 1));
         recyclerView = findViewById(R.id.recyclerView_product54);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

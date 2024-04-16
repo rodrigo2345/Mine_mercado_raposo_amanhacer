@@ -34,7 +34,7 @@ public class activity_probar_bacon_fumado_fatiado_75GR extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_probar_bacon_fumado_fatiado75_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Probar Bacon Fumado Fatiado 75GR", "1,55€", R.drawable.probar_bacon_fumado_fatiado_75gr, 1));
+        contactList.add(new Contact("Probar Bacon Fumado Fatiado 75GR", "1,55€","" , R.drawable.probar_bacon_fumado_fatiado_75gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product26);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

@@ -33,7 +33,7 @@ public class activity_Arroz_Agulha_amanhecer extends AppCompatActivity {
         setContentView(R.layout.activity_arroz_agulha_amanhecer);
 
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Arroz Agulha AMANHECER", "1,85€", R.drawable.amahecer_arroz_agulha, 1));
+        contactList.add(new Contact("Arroz Agulha AMANHECER", "1,85€","" , R.drawable.amahecer_arroz_agulha, 1));
 
         recyclerView = findViewById(R.id.recyclerView_product);
         carrinhoList = getCarrinhoListFromSharedPreferences();

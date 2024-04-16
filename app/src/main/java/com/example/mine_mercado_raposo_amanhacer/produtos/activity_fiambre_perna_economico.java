@@ -12,7 +12,6 @@ import android.view.View;
 
 import com.example.mine_mercado_raposo_amanhacer.R;
 import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.Contact;
-import com.example.mine_mercado_raposo_amanhacer.produtos.activity_casca_ostra_1KG;
 import com.example.mine_mercado_raposo_amanhacer.view.ContactAdapter;
 import com.example.mine_mercado_raposo_amanhacer.view.MainActivity;
 import com.example.mine_mercado_raposo_amanhacer.view.PesquisaActivity;
@@ -32,7 +31,7 @@ public class activity_fiambre_perna_economico extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fiambre_perna_economico);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Fiambre Perna FT Economico", "1,40€", R.drawable.fiambre_perna_economico, 1));
+        contactList.add(new Contact("Fiambre Perna FT Economico", "1,40€","", R.drawable.fiambre_perna_economico, 1));
         recyclerView = findViewById(R.id.recyclerView_product47);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

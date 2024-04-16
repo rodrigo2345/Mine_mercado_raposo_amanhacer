@@ -32,7 +32,7 @@ public class activity_fiambre_pa_200GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fiambre_pa200_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Fiambre da Pa AMANHECER 200GR", "1,75€", R.drawable.fiambre_pa_200gr, 1));
+        contactList.add(new Contact("Fiambre da Pa AMANHECER 200GR", "1,75€","", R.drawable.fiambre_pa_200gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product42);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

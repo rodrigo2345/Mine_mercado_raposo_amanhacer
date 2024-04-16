@@ -33,7 +33,7 @@ public class activity_linguica_Porco_alentejano_180GR extends AppCompatActivity 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linguica_porco_alentejano180_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Linguica Porco Alentejano AMANHECER 180 GR", "2,49€", R.drawable.linguica_porco_alentejano_180gr, 1));
+        contactList.add(new Contact("Linguica Porco Alentejano AMANHECER 180 GR", "2,49€","" , R.drawable.linguica_porco_alentejano_180gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product37);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

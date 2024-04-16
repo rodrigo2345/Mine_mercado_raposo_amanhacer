@@ -34,7 +34,7 @@ public class activity_milho_partido_25kg extends AppCompatActivity {
         setContentView(R.layout.activity_milho_partido_25kg);
 
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Milho Partido 25KG", "11,10€", R.drawable.milho_partido_25kg, 1));
+        contactList.add(new Contact("Milho Partido 25KG", "11,10€","" , R.drawable.milho_partido_25kg, 1));
 
         recyclerView = findViewById(R.id.recyclerView_product3);
         carrinhoList = getCarrinhoListFromSharedPreferences();

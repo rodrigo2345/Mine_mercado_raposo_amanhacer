@@ -33,7 +33,7 @@ public class activity_toucinho_pedacos_sal_montanheira extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toucinho_pedacos_sal_montanheira);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Toucinho Pedacos com Sal Montanheira", "9,65€", R.drawable.toucinho_pedacos_sal_montanheira, 1));
+        contactList.add(new Contact("Toucinho Pedacos com Sal Montanheira", "9,65€","" , R.drawable.toucinho_pedacos_sal_montanheira, 1));
         recyclerView = findViewById(R.id.recyclerView_product22);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

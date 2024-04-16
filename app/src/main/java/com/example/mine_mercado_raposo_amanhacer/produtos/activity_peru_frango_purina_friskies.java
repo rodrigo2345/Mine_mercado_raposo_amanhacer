@@ -32,7 +32,7 @@ public class activity_peru_frango_purina_friskies extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_peru_frango_purina_friskies);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Racao Seca de Gato Esterilizado Peru e Frango Purina Friskies 1,5KG", "7,85€", R.drawable.peru_frango_purina_friskies, 1));
+        contactList.add(new Contact("Racao Seca de Gato Esterilizado Peru e Frango Purina Friskies 1,5KG", "7,85€","" , R.drawable.peru_frango_purina_friskies, 1));
         recyclerView = findViewById(R.id.recyclerView_product15);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

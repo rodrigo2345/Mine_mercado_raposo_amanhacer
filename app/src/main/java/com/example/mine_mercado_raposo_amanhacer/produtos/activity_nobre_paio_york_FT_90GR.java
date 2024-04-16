@@ -31,7 +31,7 @@ public class activity_nobre_paio_york_FT_90GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nobre_paio_york_ft90_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Nobre Paio York FT 90GR", "1,40€", R.drawable.nobre_paio_york_ft_90gr, 1));
+        contactList.add(new Contact("Nobre Paio York FT 90GR", "1,40€","" , R.drawable.nobre_paio_york_ft_90gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product29);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

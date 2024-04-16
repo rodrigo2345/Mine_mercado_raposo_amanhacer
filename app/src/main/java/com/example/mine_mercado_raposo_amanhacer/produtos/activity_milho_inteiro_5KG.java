@@ -31,7 +31,7 @@ public class activity_milho_inteiro_5KG extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_milho_inteiro5_kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Milho Inteiro 5KG", "2,40€", R.drawable.milho_inteiro_5kg, 1));
+        contactList.add(new Contact("Milho Inteiro 5KG", "2,40€","" , R.drawable.milho_inteiro_5kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product44);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

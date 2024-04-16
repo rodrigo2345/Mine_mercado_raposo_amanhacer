@@ -33,7 +33,7 @@ public class activity_valouro_granulado_galinhas_poedeiras_5kg extends AppCompat
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_valouro_granulado_galinhas_poedeiras5kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Valouro Granulado para Galinhas Poedeiras 5KG", "2,95€", R.drawable.valouro_galinhas_poedeiras_5kg, 1));
+        contactList.add(new Contact("Valouro Granulado para Galinhas Poedeiras 5KG", "2,95€","" , R.drawable.valouro_galinhas_poedeiras_5kg, 1));
 
         recyclerView = findViewById(R.id.recyclerView_product5);
         carrinhoList = getCarrinhoListFromSharedPreferences();

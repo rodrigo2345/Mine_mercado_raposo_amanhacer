@@ -31,7 +31,7 @@ public class activity_presunto_serrano_cura_FT_200GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presunto_serrano_cura_ft200_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Presunto Serrano 9 Meses Cura AMANHECER FT 200GR", "3,79€", R.drawable.presunto_serrano_cura_ft_200gr, 1));
+        contactList.add(new Contact("Presunto Serrano 9 Meses Cura AMANHECER FT 200GR", "3,79€","" , R.drawable.presunto_serrano_cura_ft_200gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product36);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

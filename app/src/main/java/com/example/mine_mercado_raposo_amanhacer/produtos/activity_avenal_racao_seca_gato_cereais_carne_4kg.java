@@ -32,7 +32,7 @@ public class activity_avenal_racao_seca_gato_cereais_carne_4kg extends AppCompat
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avenal_racao_seca_gato_cereais_carne4kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Avenal Racao Seca de Gato Cereais Carne 4KG", "6,90€", R.drawable.avenal_racao_seca_gato_cereais_carne_4kg, 1));
+        contactList.add(new Contact("Avenal Racao Seca de Gato Cereais Carne 4KG", "6,90€","" , R.drawable.avenal_racao_seca_gato_cereais_carne_4kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product18);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

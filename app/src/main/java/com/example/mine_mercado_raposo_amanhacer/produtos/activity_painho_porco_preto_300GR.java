@@ -31,7 +31,7 @@ public class activity_painho_porco_preto_300GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_painho_porco_preto300_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Painho Porco Preto AMANHECER 300GR", "7,04€", R.drawable.painho_porco_preto_300gr, 1));
+        contactList.add(new Contact("Painho Porco Preto AMANHECER 300GR", "7,04€","" , R.drawable.painho_porco_preto_300gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product40);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

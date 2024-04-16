@@ -33,7 +33,7 @@ public class activity_mistura_cereais_para_aves_25kg extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mistura_cereais_para_aves25kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Mistura de Cereais para Aves 25KG", "12,55€", R.drawable.mistura_cereais_aves_25kg, 1));
+        contactList.add(new Contact("Mistura de Cereais para Aves 25KG", "12,55€","" , R.drawable.mistura_cereais_aves_25kg, 1));
 
         recyclerView = findViewById(R.id.recyclerView_product6);
         carrinhoList = getCarrinhoListFromSharedPreferences();

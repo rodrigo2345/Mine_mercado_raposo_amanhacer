@@ -33,7 +33,7 @@ public class activity_nobre_presunto_fatiado_70GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nobre_presunto_fatiado70_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Nobre Presunto Fatiado 70GR", "1,99€", R.drawable.nobre_presunto_fatiado_70gr, 1));
+        contactList.add(new Contact("Nobre Presunto Fatiado 70GR", "1,99€","" , R.drawable.nobre_presunto_fatiado_70gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product25);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

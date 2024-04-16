@@ -33,7 +33,7 @@ public class activity_farinheira_branca_porco_branco extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_farinheira_branca_porco_branco);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Farinheira Branca Porco Branco", "12,65€", R.drawable.farinheira_branca_porco_branco, 1));
+        contactList.add(new Contact("Farinheira Branca Porco Branco", "12,65€","Descrição do produto - Preço do Kilo" , R.drawable.farinheira_branca_porco_branco, 1));
         recyclerView = findViewById(R.id.recyclerView_product19);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

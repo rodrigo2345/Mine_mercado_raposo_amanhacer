@@ -31,7 +31,7 @@ public class activity_nobre_chouricao_FT_100GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nobre_chouricao_ft100_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Nobre Chouricao FT 100GR", "1,40€", R.drawable.nobre_chouricao_ft_100gr, 1));
+        contactList.add(new Contact("Nobre Chouricao FT 100GR", "1,40€","" , R.drawable.nobre_chouricao_ft_100gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product28);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

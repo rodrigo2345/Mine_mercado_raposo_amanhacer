@@ -31,7 +31,7 @@ public class activity_racao_pintos_104_valouro_5KG extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_racao_pintos104_valouro5_kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Racao Pintos Iniciacao 104 Mic.Valouro 5KG", "3,30€", R.drawable.racao_pintos_104_valouro_5kg, 1));
+        contactList.add(new Contact("Racao Pintos Iniciacao 104 Mic.Valouro 5KG", "3,30€","" , R.drawable.racao_pintos_104_valouro_5kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product43);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

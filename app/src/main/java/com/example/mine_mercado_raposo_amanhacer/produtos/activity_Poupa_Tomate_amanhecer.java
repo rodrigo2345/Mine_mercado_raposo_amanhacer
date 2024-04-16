@@ -35,7 +35,7 @@ public class activity_Poupa_Tomate_amanhecer extends AppCompatActivity {
         setContentView(R.layout.activity_poupa_tomate_amanhecer);
 
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Polpa Tomate  AMANHECER", "0,35€", R.drawable.tomate_poupa, 1));
+        contactList.add(new Contact("Polpa Tomate  AMANHECER", "0,35€","" , R.drawable.tomate_poupa, 1));
 
         recyclerView = findViewById(R.id.recyclerView_product2);
         carrinhoList = getCarrinhoListFromSharedPreferences();

@@ -31,7 +31,7 @@ public class activity_casca_ostra_1KG extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_casca_ostra1_kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Casca de Ostra 1KG", "0,80€", R.drawable.casca_ostra_1kg, 1));
+        contactList.add(new Contact("Casca de Ostra 1KG", "0,80€","" , R.drawable.casca_ostra_1kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product46);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

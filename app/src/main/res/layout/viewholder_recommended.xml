@@ -59,7 +59,17 @@
         app:layout_constraintStart_toStartOf="@+id/textViewProductName2"
         app:layout_constraintTop_toBottomOf="@+id/textViewProductName2"
         tools:text="R$ 1,85" />
-
+    <TextView
+        android:id="@+id/textViewProductDescricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Descrição do Produto"
+        android:textColor="#373B54"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewProductPrice2"
+        app:layout_constraintStart_toStartOf="@+id/textViewProductPrice2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductPrice2" />
     <Button
         android:id="@+id/addToCartButton"
         android:layout_width="221dp"

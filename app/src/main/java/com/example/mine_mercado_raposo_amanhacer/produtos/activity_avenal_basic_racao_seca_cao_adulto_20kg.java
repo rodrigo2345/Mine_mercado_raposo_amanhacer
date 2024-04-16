@@ -31,7 +31,7 @@ public class activity_avenal_basic_racao_seca_cao_adulto_20kg extends AppCompatA
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avenal_basic_racao_seca_cao_adulto20kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Avenal Basic Racao Seca Cao Adulto 20KG", "15,95€", R.drawable.avenal_basic_racao_seca_cao_adulto_20kg, 1));
+        contactList.add(new Contact("Avenal Basic Racao Seca Cao Adulto 20KG", "15,95€","" , R.drawable.avenal_basic_racao_seca_cao_adulto_20kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product10);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

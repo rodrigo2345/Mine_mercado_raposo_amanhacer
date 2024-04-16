@@ -31,7 +31,7 @@ public class activity_banha_porco_235GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_banha_porco235_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Banha de Porco 235GR", "1,95€", R.drawable.banha_porco_235gr, 1));
+        contactList.add(new Contact("Banha de Porco 235GR", "1,95€","" , R.drawable.banha_porco_235gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product38);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

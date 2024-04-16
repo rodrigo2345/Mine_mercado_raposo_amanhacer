@@ -3,21 +3,18 @@ package com.example.mine_mercado_raposo_amanhacer.data.localdatabase;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import androidx.annotation.NonNull;
-
-import android.os.Parcel;
-import android.os.Parcelable;
-
 public class Contact implements Parcelable {
 
     private String title;
     private String lojaPrice;
+    private String descricao; // Adicionando a descrição
     private int restaurantImage;
-    private int quantity; // Adicionando a quantidade
+    private int quantity;
 
-    public Contact(String title, String lojaPrice, int restaurantImage, int quantity) {
+    public Contact(String title, String lojaPrice, String descricao, int restaurantImage, int quantity) {
         this.title = title;
         this.lojaPrice = lojaPrice;
+        this.descricao = descricao;
         this.restaurantImage = restaurantImage;
         this.quantity = quantity;
     }
@@ -25,6 +22,7 @@ public class Contact implements Parcelable {
     protected Contact(Parcel in) {
         title = in.readString();
         lojaPrice = in.readString();
+        descricao = in.readString();
         restaurantImage = in.readInt();
         quantity = in.readInt();
     }
@@ -49,6 +47,10 @@ public class Contact implements Parcelable {
         return lojaPrice;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
     public int getRestaurantImage() {
         return restaurantImage;
     }
@@ -70,6 +72,7 @@ public class Contact implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(title);
         dest.writeString(lojaPrice);
+        dest.writeString(descricao);
         dest.writeInt(restaurantImage);
         dest.writeInt(quantity);
     }

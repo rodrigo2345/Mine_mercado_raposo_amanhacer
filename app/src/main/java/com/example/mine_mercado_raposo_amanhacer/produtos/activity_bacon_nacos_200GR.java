@@ -31,7 +31,7 @@ public class activity_bacon_nacos_200GR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bacon_nacos200_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Bacon Probar Nacos Boa Escolha 200GR", "2,55€", R.drawable.bacon_nacos_200gr, 1));
+        contactList.add(new Contact("Bacon Probar Nacos Boa Escolha 200GR", "2,55€", "", R.drawable.bacon_nacos_200gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product48);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

@@ -31,7 +31,7 @@ public class activity_spike_racao_seca_cao_adulto_4kg extends AppCompatActivity 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spike_racao_seca_cao_adulto4kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Spike Racao Seca de Cao Adulto 4KG", "5,30€", R.drawable.spike_racao_seca_cao_adulto_4kg, 1));
+        contactList.add(new Contact("Spike Racao Seca de Cao Adulto 4KG", "5,30€","" , R.drawable.spike_racao_seca_cao_adulto_4kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product9);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

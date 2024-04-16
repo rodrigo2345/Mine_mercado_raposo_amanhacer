@@ -31,7 +31,7 @@ public class activity_sumo_amigo_morango_200ML extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sumo_amigo_morango200_ml);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Sumo Amigo de Morango 200ML", "0,70€", R.drawable.sumo_amigo_morango_200ml, 1));
+        contactList.add(new Contact("Sumo Amigo de Morango 200ML", "0,70€","" , R.drawable.sumo_amigo_morango_200ml, 1));
         recyclerView = findViewById(R.id.recyclerView_product50);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

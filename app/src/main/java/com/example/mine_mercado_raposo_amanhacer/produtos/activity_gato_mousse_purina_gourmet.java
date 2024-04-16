@@ -32,7 +32,7 @@ public class activity_gato_mousse_purina_gourmet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gato_mousse_purina_gourmet);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Alimento Gato Mousse Purina Gourmet 85GR", "1,00€", R.drawable.gato_mousse_purina_gourmet, 1));
+        contactList.add(new Contact("Alimento Gato Mousse Purina Gourmet 85GR", "1,00€","" , R.drawable.gato_mousse_purina_gourmet, 1));
         recyclerView = findViewById(R.id.recyclerView_product17);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

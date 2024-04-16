@@ -31,7 +31,7 @@ public class activity_presunto_duroc_nacos_primor_300GR extends AppCompatActivit
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presunto_duroc_nacos_primor300_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Presunto Duroc Sem Ossos Nacos Primor 300GR", "9,60€", R.drawable.presunto_duroc_nacos_primor_300gr, 1));
+        contactList.add(new Contact("Presunto Duroc Sem Ossos Nacos Primor 300GR", "9,60€","" , R.drawable.presunto_duroc_nacos_primor_300gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product33);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

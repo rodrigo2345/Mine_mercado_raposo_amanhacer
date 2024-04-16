@@ -31,7 +31,7 @@ public class activity_nobre_fiambre_fatias_finas_100GR extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nobre_fiambre_fatias_finas100_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Nobre Fiambre Fatias Finas 100GR", "1,40€", R.drawable.nobre_fiambre_fatias_finas_100gr, 1));
+        contactList.add(new Contact("Nobre Fiambre Fatias Finas 100GR", "1,40€","" , R.drawable.nobre_fiambre_fatias_finas_100gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product30);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

@@ -33,7 +33,7 @@ public class activity_avenal_racao_seca_gato_peixe_2kg extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avenal_racao_seca_gato_peixe2kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Avenal Racao Seca de Gato Peixe 2KG", "4,25€", R.drawable.avenal_racao_seca_gato_peixe2kg, 1));
+        contactList.add(new Contact("Avenal Racao Seca de Gato Peixe 2KG", "4,25€", "", R.drawable.avenal_racao_seca_gato_peixe2kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product14);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

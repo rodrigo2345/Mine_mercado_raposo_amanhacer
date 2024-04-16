@@ -33,7 +33,7 @@ public class activity_fiambre_peito_peru_forno_lenha_120GR extends AppCompatActi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fiambre_peito_peru_forno_lenha120_gr);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Campofrio Fiambre Peito Peru Forno de Lenha Finas Fatiado 120GR", "2,99€", R.drawable.fiambre_peito_peru_forno_lenha_120gr, 1));
+        contactList.add(new Contact("Campofrio Fiambre Peito Peru Forno de Lenha Finas Fatiado 120GR", "2,99€","" , R.drawable.fiambre_peito_peru_forno_lenha_120gr, 1));
         recyclerView = findViewById(R.id.recyclerView_product27);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

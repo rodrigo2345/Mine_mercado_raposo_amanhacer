@@ -31,7 +31,7 @@ public class activity_mistura_canarios_1KG extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mistura_canarios1_kg);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Mistura para Canarios 1KG", "2,10€", R.drawable.mistura_canarios_1kg, 1));
+        contactList.add(new Contact("Mistura para Canarios 1KG", "2,10€","" , R.drawable.mistura_canarios_1kg, 1));
         recyclerView = findViewById(R.id.recyclerView_product45);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 

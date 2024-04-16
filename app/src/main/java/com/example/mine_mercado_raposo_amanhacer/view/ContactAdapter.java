@@ -50,6 +50,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
         Contact contact = contactList.get(position);
         holder.Title.setText(contact.getTitle());
         holder.RestaurantType.setText(contact.getLojaPrice());
+        holder.Descricao.setText(contact.getDescricao()); // Configurando a descrição
         holder.ImageViewAvatar.setImageResource(contact.getRestaurantImage());
 
         holder.addBtn.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +83,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
         private ImageView ImageViewAvatar;
         private TextView Title;
         private TextView RestaurantType;
+        private TextView Descricao; // Adicionando o TextView para a descrição
         private Button addBtn;
 
         public ContactViewHolder(@NonNull View rootView) {
@@ -89,6 +91,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
             this.rootView = rootView;
             this.Title = rootView.findViewById(R.id.textViewProductName2);
             this.RestaurantType = rootView.findViewById(R.id.textViewProductPrice2);
+            this.Descricao = rootView.findViewById(R.id.textViewProductDescricao); // Inicializando o TextView da descrição
             this.ImageViewAvatar = rootView.findViewById(R.id.imageViewProduct2);
             this.addBtn = rootView.findViewById(R.id.addToCartButton);
         }
