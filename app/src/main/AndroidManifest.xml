@@ -28,6 +28,30 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".produtos.activity_salame_fatiado"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_esses_azeite"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_broas_mel"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_bolo_forma_noz"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_bolo_forma_laranja"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_Bolo_forma_amendoa"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_bolo_forma_mel"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_cerveja_sem_alcool_super_bock_33CL"
+            android:exported="false" />
+        <activity
             android:name=".produtos.activity_garrafa_butano_13KG_rubis"
             android:exported="false" />
         <activity

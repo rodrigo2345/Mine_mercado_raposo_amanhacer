@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_Arroz_Agulha_amanhecer;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_Bolo_forma_amendoa;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_Poupa_Tomate_amanhecer;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_avenal_basic_racao_seca_cao_adulto_20kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_avenal_racao_seca_gato_cereais_carne_20kg;
@@ -14,12 +15,18 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bacon_fumado_
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bacon_nacos_200GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bacon_primor_nacos_200GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_banha_porco_235GR;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bolo_forma_laranja;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bolo_forma_mel;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bolo_forma_noz;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_broas_mel;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_campofrio_fiambre_peru_finissimo_FT;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_casca_ostra_1KG;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_cerveja_sem_alcool_super_bock_33CL;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_carne_porco_branco_PB;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_carne_porco_preto_PP;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_grosso_porco_branco_estremoz;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_grosso_porco_preto_estremoz;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_esses_azeite;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_farinheira_branca_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_frango_FT_classicas_90GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_pa_200GR;
@@ -48,6 +55,7 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_presunto_serr
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_probar_bacon_fumado_fatiado_75GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_racao_pintos_104_valouro_5KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_racao_seca_gato_friskies_4kg;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_salame_fatiado;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_spike_racao_seca_cao_adulto_4kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_spike_racao_seca_cao_junior_4kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_sumo_amigo_morango_200ML;
@@ -289,6 +297,36 @@ public class ProductItem {
                 break;
             case "Garrafa Butano 13KG Rubis":
                 intent = new Intent(context, activity_garrafa_butano_13KG_rubis.class);
+                break;
+            case "Cerveja Sem Alcool Super Bock 33CL":
+                intent = new Intent(context, activity_cerveja_sem_alcool_super_bock_33CL.class);
+                break;
+            case "Bolo Forma de Mel":
+                intent = new Intent(context, activity_bolo_forma_mel.class);
+                break;
+            case "Bolo Forma de Amendoa":
+                intent = new Intent(context, activity_Bolo_forma_amendoa.class);
+                break;
+            case "Bolo Forma de Laranja":
+                intent = new Intent(context, activity_bolo_forma_laranja.class);
+                break;
+            case "Bolo Forma de Noz":
+                intent = new Intent(context, activity_bolo_forma_noz.class);
+                break;
+            case "Broas de Mel":
+                intent = new Intent(context, activity_broas_mel.class);
+                break;
+            case "Esses de Azeite":
+                intent = new Intent(context, activity_esses_azeite.class);
+                break;
+            case "Salame Fatiado":
+                intent = new Intent(context, activity_salame_fatiado.class);
+                break;
+            case "Queijada de Requeijao":
+                intent = new Intent(context, activity_queijada_requeijao.class);
+                break;
+            case "Folar de Mel":
+                intent = new Intent(context, activity_folar_Mel.class);
                 break;
             default:
                 break;
