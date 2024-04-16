@@ -6,6 +6,7 @@ import android.content.Intent;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_Arroz_Agulha_amanhecer;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_Bolo_forma_amendoa;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_Poupa_Tomate_amanhecer;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_adubo_azul_quimirraia_1KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_avenal_basic_racao_seca_cao_adulto_20kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_avenal_racao_seca_gato_cereais_carne_20kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_avenal_racao_seca_gato_cereais_carne_2kg;
@@ -26,6 +27,8 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_carn
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_carne_porco_preto_PP;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_grosso_porco_branco_estremoz;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_grosso_porco_preto_estremoz;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_escova_limpa_sanitas_piassaba_branco;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_esponja_banho_mg127_tabomil;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_esses_azeite;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_farinheira_branca_porco_branco;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_frango_FT_classicas_90GR;
@@ -48,25 +51,34 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_nobre_chouric
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_nobre_fiambre_fatias_finas_100GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_nobre_paio_york_FT_90GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_nobre_presunto_fatiado_70GR;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_oleo_cedro_SP_mistolin_360ML;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_painho_porco_preto_300GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_pepsi_regular;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_peru_frango_purina_friskies;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_porta_escova_limpa_sanitas_piassaba_branco;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_presunto_duroc_nacos_primor_300GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_presunto_serrano_cura_FT_200GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_probar_bacon_fumado_fatiado_75GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_queijada_requeijao;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_racao_pintos_104_valouro_5KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_racao_seca_gato_friskies_4kg;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_saco_pinhas_inflame_3KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_salame_fatiado;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_spike_racao_seca_cao_adulto_4kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_spike_racao_seca_cao_junior_4kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_sumo_amigo_morango_200ML;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_tapete_floral_polipropileno;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_tinta_branca_ecomat_quimirraia_5LT;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_toucinho_pedacos_sal_montanheira;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_trincha_junior;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_valouro_granulado_galinhas_poedeiras_30kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_valouro_granulado_galinhas_poedeiras_5kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_milho_inteiro_5KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_mistura_canarios_1KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_perna_economico;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_vaso_castanho;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_vaso_castanho_prato;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_velas_iluminacao_v7_lumar;
 
 public class ProductItem {
 
@@ -329,6 +341,42 @@ public class ProductItem {
                 break;
             case "Folar de Mel":
                 intent = new Intent(context, activity_folar_Mel.class);
+                break;
+            case "Tapete Floral 57X3CM 100% Polipropileno":
+                intent = new Intent(context, activity_tapete_floral_polipropileno.class);
+                break;
+            case "Saco de Pinhas Inflame 3KG":
+                intent = new Intent(context, activity_saco_pinhas_inflame_3KG.class);
+                break;
+            case "Velas de Iluminacao V7 Lumar":
+                intent = new Intent(context, activity_velas_iluminacao_v7_lumar.class);
+                break;
+            case "Escova Limpa Sanitas com Piassaba Branco":
+                intent = new Intent(context, activity_escova_limpa_sanitas_piassaba_branco.class);
+                break;
+            case "Porta Escova Limpa Sanitas com Piassaba Branco":
+                intent = new Intent(context, activity_porta_escova_limpa_sanitas_piassaba_branco.class);
+                break;
+            case "Trincha Junior 21/2":
+                intent = new Intent(context, activity_trincha_junior.class);
+                break;
+            case "Adubo Azul Quimirraia 1KG":
+                intent = new Intent(context, activity_adubo_azul_quimirraia_1KG.class);
+                break;
+            case "Vaso Castanho":
+                intent = new Intent(context, activity_vaso_castanho.class);
+                break;
+            case "Vaso Castanho para Prato":
+                intent = new Intent(context, activity_vaso_castanho_prato.class);
+                break;
+            case "Oleo de Cedro SP Mistolin 360ML":
+                intent = new Intent(context, activity_oleo_cedro_SP_mistolin_360ML.class);
+                break;
+            case "Esponja de Banho MG127 Tabomil":
+                intent = new Intent(context, activity_esponja_banho_mg127_tabomil.class);
+                break;
+            case "Tinta Branca Ecomat Quimirraia 5LT":
+                intent = new Intent(context, activity_tinta_branca_ecomat_quimirraia_5LT.class);
                 break;
             default:
                 break;

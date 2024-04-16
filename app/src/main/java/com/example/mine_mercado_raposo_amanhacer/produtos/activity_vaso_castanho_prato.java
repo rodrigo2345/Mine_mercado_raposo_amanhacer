@@ -22,17 +22,17 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class activity_salame_fatiado extends AppCompatActivity {
+public class activity_vaso_castanho_prato extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ContactAdapter adapter;
     private List<Contact> carrinhoList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_salame_fatiado);
+        setContentView(R.layout.activity_vaso_castanho_prato);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Salame Fatiado", "0,85€","" , R.drawable.salame_fatiado, 1));
-        recyclerView = findViewById(R.id.recyclerView_product62);
+        contactList.add(new Contact("Vaso Castanho para Prato", "0,75€","" , R.drawable.vaso_castanho_prato, 1));
+        recyclerView = findViewById(R.id.recyclerView_product73);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);
@@ -56,12 +56,12 @@ public class activity_salame_fatiado extends AppCompatActivity {
     }
 
     public void Search(View view) {
-        Intent intent = new Intent(activity_salame_fatiado.this, PesquisaActivity.class);
+        Intent intent = new Intent(activity_vaso_castanho_prato.this, PesquisaActivity.class);
         startActivity(intent);
     }
 
     public void Home(View view) {
-        Intent intent = new Intent(activity_salame_fatiado.this, MainActivity.class);
+        Intent intent = new Intent(activity_vaso_castanho_prato.this, MainActivity.class);
         startActivity(intent);
     }
 }

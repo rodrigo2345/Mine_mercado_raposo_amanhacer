@@ -32,7 +32,7 @@ public class activity_esses_azeite extends AppCompatActivity {
         setContentView(R.layout.activity_esses_azeite);
         List<Contact> contactList = new ArrayList<>();
         contactList.add(new Contact("Esses de Azeite", "8,00€","Descrição do produto - Preço do Kilo" , R.drawable.esses_azeite, 1));
-        recyclerView = findViewById(R.id.recyclerView_product60);
+        recyclerView = findViewById(R.id.recyclerView_product61);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);

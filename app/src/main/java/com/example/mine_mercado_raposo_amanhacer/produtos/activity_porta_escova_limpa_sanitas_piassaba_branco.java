@@ -22,17 +22,17 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class activity_salame_fatiado extends AppCompatActivity {
+public class activity_porta_escova_limpa_sanitas_piassaba_branco extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ContactAdapter adapter;
     private List<Contact> carrinhoList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_salame_fatiado);
+        setContentView(R.layout.activity_porta_escova_limpa_sanitas_piassaba_branco);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Salame Fatiado", "0,85€","" , R.drawable.salame_fatiado, 1));
-        recyclerView = findViewById(R.id.recyclerView_product62);
+        contactList.add(new Contact("Porta Escova Limpa Sanitas com Piassaba Branco", "3,45€","" , R.drawable.porta_escova_limpa_sanitas_piassaba_branco, 1));
+        recyclerView = findViewById(R.id.recyclerView_product69);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);
@@ -56,12 +56,12 @@ public class activity_salame_fatiado extends AppCompatActivity {
     }
 
     public void Search(View view) {
-        Intent intent = new Intent(activity_salame_fatiado.this, PesquisaActivity.class);
+        Intent intent = new Intent(activity_porta_escova_limpa_sanitas_piassaba_branco.this, PesquisaActivity.class);
         startActivity(intent);
     }
 
     public void Home(View view) {
-        Intent intent = new Intent(activity_salame_fatiado.this, MainActivity.class);
+        Intent intent = new Intent(activity_porta_escova_limpa_sanitas_piassaba_branco.this, MainActivity.class);
         startActivity(intent);
     }
 }

@@ -32,7 +32,7 @@ public class activity_queijada_requeijao extends AppCompatActivity {
         setContentView(R.layout.activity_queijada_requeijao);
         List<Contact> contactList = new ArrayList<>();
         contactList.add(new Contact("Queijada de Requeijao", "0,85€","" , R.drawable.queijada_requeijao, 1));
-        recyclerView = findViewById(R.id.recyclerView_product62);
+        recyclerView = findViewById(R.id.recyclerView_product63);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);

@@ -28,6 +28,42 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".produtos.activity_tinta_branca_ecomat_quimirraia_5LT"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_esponja_banho_mg127_tabomil"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_oleo_cedro_SP_mistolin_360ML"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_vaso_castanho_prato"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_vaso_castanho"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_adubo_azul_quimirraia_1KG"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_trincha_junior"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_porta_escova_limpa_sanitas_piassaba_branco"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_escova_limpa_sanitas_piassaba_branco"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_velas_iluminacao_v7_lumar"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_saco_pinhas_inflame_3KG"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_tapete_floral_polipropileno"
+            android:exported="false" />
+        <activity
             android:name=".produtos.activity_folar_Mel"
             android:exported="false" />
         <activity

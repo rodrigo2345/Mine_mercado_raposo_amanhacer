@@ -22,17 +22,17 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class activity_salame_fatiado extends AppCompatActivity {
+public class activity_esponja_banho_mg127_tabomil extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ContactAdapter adapter;
     private List<Contact> carrinhoList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_salame_fatiado);
+        setContentView(R.layout.activity_esponja_banho_mg127_tabomil);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Salame Fatiado", "0,85€","" , R.drawable.salame_fatiado, 1));
-        recyclerView = findViewById(R.id.recyclerView_product62);
+        contactList.add(new Contact("Esponja de Banho MG127 Tabomil", "1,55€","" , R.drawable.esponja_banho_mg127_tabomil, 1));
+        recyclerView = findViewById(R.id.recyclerView_product75);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);
@@ -56,12 +56,12 @@ public class activity_salame_fatiado extends AppCompatActivity {
     }
 
     public void Search(View view) {
-        Intent intent = new Intent(activity_salame_fatiado.this, PesquisaActivity.class);
+        Intent intent = new Intent(activity_esponja_banho_mg127_tabomil.this, PesquisaActivity.class);
         startActivity(intent);
     }
 
     public void Home(View view) {
-        Intent intent = new Intent(activity_salame_fatiado.this, MainActivity.class);
+        Intent intent = new Intent(activity_esponja_banho_mg127_tabomil.this, MainActivity.class);
         startActivity(intent);
     }
 }

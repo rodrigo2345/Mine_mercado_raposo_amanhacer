@@ -32,7 +32,7 @@ public class activity_folar_Mel extends AppCompatActivity {
         setContentView(R.layout.activity_folar_mel);
         List<Contact> contactList = new ArrayList<>();
         contactList.add(new Contact("Folar de Mel", "10,40€","Descrição do produto - Preço do Kilo" , R.drawable.folar_mel, 1));
-        recyclerView = findViewById(R.id.recyclerView_product63);
+        recyclerView = findViewById(R.id.recyclerView_product64);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);
