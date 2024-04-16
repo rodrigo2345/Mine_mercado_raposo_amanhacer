@@ -28,6 +28,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".produtos.activity_folar_Mel"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_queijada_requeijao"
+            android:exported="false" />
+        <activity
             android:name=".produtos.activity_salame_fatiado"
             android:exported="false" />
         <activity
