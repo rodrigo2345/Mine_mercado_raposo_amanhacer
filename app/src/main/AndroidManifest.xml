@@ -28,6 +28,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".produtos.activity_raid_moscas_mosquitos_accion_fulminante_400ML"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_insecticida_formigas_bio_fortana_100gr"
+            android:exported="false" />
+        <activity
             android:name=".produtos.activity_feijao_verde_rasteiro_patareco"
             android:exported="false" />
         <activity
