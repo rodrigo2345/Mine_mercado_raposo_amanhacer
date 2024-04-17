@@ -372,6 +372,9 @@ public class ProductItem {
             case "Raid Moscas Y Mosquitos Accion Fulminante 400ML":
                 intent = new Intent(context, activity_raid_moscas_mosquitos_accion_fulminante_400ML.class);
                 break;
+            case "Chinelos":
+                intent = new Intent(context, activity_chinelos.class);
+                break;
             default:
                 break;
         }
