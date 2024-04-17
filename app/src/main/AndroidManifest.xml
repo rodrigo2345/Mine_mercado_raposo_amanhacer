@@ -28,6 +28,69 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".produtos.activity_feijao_verde_rasteiro_patareco"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_semente_feijao_trepar_algarve"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_prato_branco_ebro"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_balde_tampa_5_5_LT"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_lenco_papel_branco_3f_6un"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_jogo_cama_905_MTS"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_jogo_cama_2_40MTS"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_passadeira_belga_C_Debrum_Poliamida"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_enleia_polietileno_3mm_branca_rl_corda"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_tela_laminada_brilho_estampada_5h3"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_tela_laminada_brilho_estampada_3d3"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_fritadeira_rede_esmalte_24cm_orbita"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_cacarola_aluminio_n22_orbita"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_cacarola_aluminio_n20_orbita"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_cafeteira_inox_ibiza_hoyca_1lt"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_papel_higienico_2f_domestico_compacto_amoos"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_vaso_prato_terracota_castanho"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_balde_2Lt_tampa_Popcorn"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_saco_lixo_ecolixo_50lt"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_limacide_250gr_caracois"
+            android:exported="false" />
+        <activity
+            android:name=".produtos.activity_tinta_branca_sorcor_quimirraia_5LT"
+            android:exported="false" />
+        <activity
             android:name=".produtos.activity_tinta_branca_ecomat_quimirraia_5LT"
             android:exported="false" />
         <activity

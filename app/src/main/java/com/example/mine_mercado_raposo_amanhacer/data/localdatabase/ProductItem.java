@@ -15,11 +15,16 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_avenal_racao_
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bacon_fumado_extra_pedacos_probar_190GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bacon_nacos_200GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bacon_primor_nacos_200GR;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_balde_2Lt_tampa_Popcorn;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_balde_tampa_5_5_LT;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_banha_porco_235GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bolo_forma_laranja;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bolo_forma_mel;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_bolo_forma_noz;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_broas_mel;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_cacarola_aluminio_n20_orbita;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_cacarola_aluminio_n22_orbita;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_cafeteira_inox_ibiza_hoyca_1lt;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_campofrio_fiambre_peru_finissimo_FT;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_casca_ostra_1KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_cerveja_sem_alcool_super_bock_33CL;
@@ -27,19 +32,26 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_carn
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_carne_porco_preto_PP;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_grosso_porco_branco_estremoz;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_chourico_grosso_porco_preto_estremoz;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_enleia_polietileno_3mm_branca_rl_corda;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_escova_limpa_sanitas_piassaba_branco;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_esponja_banho_mg127_tabomil;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_esses_azeite;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_farinheira_branca_porco_branco;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_feijao_verde_rasteiro_patareco;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_frango_FT_classicas_90GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_pa_200GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_peito_peru_forno_lenha_120GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_folar_Mel;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fritadeira_rede_esmalte_24cm_orbita;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_garrafa_butano_13KG_rubis;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_garrafa_cepsa;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_garrafa_tuti_11KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_garrafa_tuti_13KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_gato_mousse_purina_gourmet;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_jogo_cama_2_40MTS;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_jogo_cama_905_MTS;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_lenco_papel_branco_3f_6un;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_limacide_250gr_caracois;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_linguica_Porco_alentejano_180GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_linguica_alentejana_180GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_milho_partido_25kg;
@@ -53,22 +65,30 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_nobre_paio_yo
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_nobre_presunto_fatiado_70GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_oleo_cedro_SP_mistolin_360ML;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_painho_porco_preto_300GR;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_papel_higienico_2f_domestico_compacto_amoos;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_passadeira_belga_C_Debrum_Poliamida;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_pepsi_regular;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_peru_frango_purina_friskies;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_porta_escova_limpa_sanitas_piassaba_branco;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_prato_branco_ebro;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_presunto_duroc_nacos_primor_300GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_presunto_serrano_cura_FT_200GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_probar_bacon_fumado_fatiado_75GR;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_queijada_requeijao;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_racao_pintos_104_valouro_5KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_racao_seca_gato_friskies_4kg;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_saco_lixo_ecolixo_50lt;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_saco_pinhas_inflame_3KG;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_salame_fatiado;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_semente_feijao_trepar_algarve;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_spike_racao_seca_cao_adulto_4kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_spike_racao_seca_cao_junior_4kg;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_sumo_amigo_morango_200ML;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_tapete_floral_polipropileno;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_tela_laminada_brilho_estampada_3d3;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_tela_laminada_brilho_estampada_5h3;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_tinta_branca_ecomat_quimirraia_5LT;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_tinta_branca_sorcor_quimirraia_5LT;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_toucinho_pedacos_sal_montanheira;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_trincha_junior;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_valouro_granulado_galinhas_poedeiras_30kg;
@@ -78,6 +98,7 @@ import com.example.mine_mercado_raposo_amanhacer.produtos.activity_mistura_canar
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_fiambre_perna_economico;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_vaso_castanho;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_vaso_castanho_prato;
+import com.example.mine_mercado_raposo_amanhacer.produtos.activity_vaso_prato_terracota_castanho;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_velas_iluminacao_v7_lumar;
 
 public class ProductItem {
@@ -377,6 +398,69 @@ public class ProductItem {
                 break;
             case "Tinta Branca Ecomat Quimirraia 5LT":
                 intent = new Intent(context, activity_tinta_branca_ecomat_quimirraia_5LT.class);
+                break;
+            case "Tinta Branca Sorcor Quimirraia 5LT":
+                intent = new Intent(context, activity_tinta_branca_sorcor_quimirraia_5LT.class);
+                break;
+            case "Limacide 250GR Caracois":
+                intent = new Intent(context, activity_limacide_250gr_caracois.class);
+                break;
+            case "Saco Lixo Ecolixo 50LT":
+                intent = new Intent(context, activity_saco_lixo_ecolixo_50lt.class);
+                break;
+            case "Balde 2LT com Tampa Popcorn/250":
+                intent = new Intent(context, activity_balde_2Lt_tampa_Popcorn.class);
+                break;
+            case "Vaso e Prato Terracota Castanho":
+                intent = new Intent(context, activity_vaso_prato_terracota_castanho.class);
+                break;
+            case "Papel Higienico 2F Domestico Compacto 12=24 P96R Amoos":
+                intent = new Intent(context, activity_papel_higienico_2f_domestico_compacto_amoos.class);
+                break;
+            case "Cafeteira Inox Ibiza Hoyca 1LT":
+                intent = new Intent(context, activity_cafeteira_inox_ibiza_hoyca_1lt.class);
+                break;
+            case "Cacarola de Aluminio n20 Orbita":
+                intent = new Intent(context, activity_cacarola_aluminio_n20_orbita.class);
+                break;
+            case "Cacarola de Aluminio n22 Orbita":
+                intent = new Intent(context, activity_cacarola_aluminio_n22_orbita.class);
+                break;
+            case "Fritadeira com Rede Esmalte 24CM Orbita":
+                intent = new Intent(context, activity_fritadeira_rede_esmalte_24cm_orbita.class);
+                break;
+            case "Tela Laminada Brilho Estampada 3D3/10 100%PVC":
+                intent = new Intent(context, activity_tela_laminada_brilho_estampada_3d3.class);
+                break;
+            case "Tela Laminada Brilho Estampada 5H3/01 100%PVC":
+                intent = new Intent(context, activity_tela_laminada_brilho_estampada_5h3.class);
+                break;
+            case "Enleia Polietileno 3MM Branca RL Corda":
+                intent = new Intent(context, activity_enleia_polietileno_3mm_branca_rl_corda.class);
+                break;
+            case "Passadeira Belga C/Debrum 100%Poliamida":
+                intent = new Intent(context, activity_passadeira_belga_C_Debrum_Poliamida.class);
+                break;
+            case "Jogo de Cama 100% 01 2,40MTS":
+                intent = new Intent(context, activity_jogo_cama_2_40MTS.class);
+                break;
+            case "Jogo de Cama 100% 01 REF 905":
+                intent = new Intent(context, activity_jogo_cama_905_MTS.class);
+                break;
+            case "Lenco Papel Branco 3F 6UN":
+                intent = new Intent(context, activity_lenco_papel_branco_3f_6un.class);
+                break;
+            case "Balde com Tampa 5,5LT":
+                intent = new Intent(context, activity_balde_tampa_5_5_LT.class);
+                break;
+            case "Prato Branco EBRO":
+                intent = new Intent(context, activity_prato_branco_ebro.class);
+                break;
+            case "Semente Feijao Trepar Algarve":
+                intent = new Intent(context, activity_semente_feijao_trepar_algarve.class);
+                break;
+            case "Feijao Verde Rasteiro Patareco":
+                intent = new Intent(context, activity_feijao_verde_rasteiro_patareco.class);
                 break;
             default:
                 break;
