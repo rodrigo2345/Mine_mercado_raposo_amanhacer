@@ -28,6 +28,30 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".congelados.activity_hamburger_peru_avibom_3un"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_frango_carne_congelado_e"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_entremeada_porco_fatiada"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_chispe_porco"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_febra_guisar_porco"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_bife_porco"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_costeleta_cachaco_porco"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_orelha_porco_congelada_saco_2un"
+            android:exported="false" />
+        <activity
             android:name=".congelados.activity_perca_nilo_posta"
             android:exported="false" />
         <activity

@@ -70,10 +70,18 @@ import com.example.mine_mercado_raposo_amanhacer.alimento_de_animais.activity_va
 import com.example.mine_mercado_raposo_amanhacer.alimento_de_animais.activity_valouro_granulado_galinhas_poedeiras_5kg;
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_sumo_amigo_morango_200ML;
 import com.example.mine_mercado_raposo_amanhacer.charcutaria.activity_toucinho_pedacos_sal_montanheira;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_bife_porco;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_carapau_grande_congelado_granel;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_cavala_grande_granel;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_chispe_porco;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_costeleta_cachaco_porco;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_entremeada_porco_fatiada;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_febra_guisar_porco;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_filete_pescada_comdalgel_cong;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_frango_carne_congelado_e;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_hamburger_peru_avibom_3un;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_lombos_bacalhau_pescanova_cong;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_orelha_porco_congelada_saco_2un;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_peixe_espada_branco_posta;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_perca_nilo_posta;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_pescada_posta_congelada_higien;
@@ -513,6 +521,30 @@ public class ProductItem {
                 break;
             case "Perca do Nilo Posta":
                 intent = new Intent(context, activity_perca_nilo_posta.class);
+                break;
+            case "Orelha de Porco Congelada Saco com 2UN":
+                intent = new Intent(context, activity_orelha_porco_congelada_saco_2un.class);
+                break;
+            case "Costeleta Cachaco de Porco":
+                intent = new Intent(context, activity_costeleta_cachaco_porco.class);
+                break;
+            case "Bife de Porco":
+                intent = new Intent(context, activity_bife_porco.class);
+                break;
+            case "Febra de Guisar de Porco Rojoes":
+                intent = new Intent(context, activity_febra_guisar_porco.class);
+                break;
+            case "Chispe de Porco":
+                intent = new Intent(context, activity_chispe_porco.class);
+                break;
+            case "Entremeada de Porco Fatiada":
+                intent = new Intent(context, activity_entremeada_porco_fatiada.class);
+                break;
+            case "Frango Carne Congelado E":
+                intent = new Intent(context, activity_frango_carne_congelado_e.class);
+                break;
+            case "Hamburger Peru Avibom 3UN":
+                intent = new Intent(context, activity_hamburger_peru_avibom_3un.class);
                 break;
             default:
                 break;
