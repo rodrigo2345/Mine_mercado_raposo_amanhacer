@@ -28,6 +28,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".congelados.activity_perca_nilo_posta"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_peixe_espada_branco_posta"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_cavala_grande_granel"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_filete_pescada_comdalgel_cong"
+            android:exported="false" />
+        <activity
             android:name=".congelados.activity_lombos_bacalhau_pescanova_cong"
             android:exported="false" />
         <activity

@@ -71,7 +71,11 @@ import com.example.mine_mercado_raposo_amanhacer.alimento_de_animais.activity_va
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_sumo_amigo_morango_200ML;
 import com.example.mine_mercado_raposo_amanhacer.charcutaria.activity_toucinho_pedacos_sal_montanheira;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_carapau_grande_congelado_granel;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_cavala_grande_granel;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_filete_pescada_comdalgel_cong;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_lombos_bacalhau_pescanova_cong;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_peixe_espada_branco_posta;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_perca_nilo_posta;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_pescada_posta_congelada_higien;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_red_fish_medio_hig;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_sardinha_congelada_granel;
@@ -499,16 +503,16 @@ public class ProductItem {
                 intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
                 break;
             case "Filete de Pescada Comdalgel Cong":
-                intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
+                intent = new Intent(context, activity_filete_pescada_comdalgel_cong.class);
                 break;
             case "Cavala Grande Granel":
-                intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
+                intent = new Intent(context, activity_cavala_grande_granel.class);
                 break;
             case "Peixe Espada Branco Posta":
-                intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
+                intent = new Intent(context, activity_peixe_espada_branco_posta.class);
                 break;
             case "Perca do Nilo Posta":
-                intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
+                intent = new Intent(context, activity_perca_nilo_posta.class);
                 break;
             default:
                 break;
