@@ -28,6 +28,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".congelados.activity_lombos_bacalhau_pescanova_cong"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_sardinha_pequena_petinga_congelada_granel"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_pescada_posta_congelada_higien"
+            android:exported="false" />
+        <activity
             android:name=".congelados.activity_carapau_grande_congelado_granel"
             android:exported="false" />
         <activity

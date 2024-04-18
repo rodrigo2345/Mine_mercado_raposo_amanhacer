@@ -71,8 +71,11 @@ import com.example.mine_mercado_raposo_amanhacer.alimento_de_animais.activity_va
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_sumo_amigo_morango_200ML;
 import com.example.mine_mercado_raposo_amanhacer.charcutaria.activity_toucinho_pedacos_sal_montanheira;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_carapau_grande_congelado_granel;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_lombos_bacalhau_pescanova_cong;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_pescada_posta_congelada_higien;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_red_fish_medio_hig;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_sardinha_congelada_granel;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_sardinha_pequena_petinga_congelada_granel;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_Arroz_Agulha_amanhecer;
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_cerveja_sem_alcool_super_bock_33CL;
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_pepsi_regular;
@@ -485,6 +488,27 @@ public class ProductItem {
                 break;
             case "Carapau Grande Congelado a Granel":
                 intent = new Intent(context, activity_carapau_grande_congelado_granel.class);
+                break;
+            case "Pescada em Posta Congelada Higien":
+                intent = new Intent(context, activity_pescada_posta_congelada_higien.class);
+                break;
+            case "Sardinha Pequena Petinga Congelada a Granel":
+                intent = new Intent(context, activity_sardinha_pequena_petinga_congelada_granel.class);
+                break;
+            case "Lombos de Bacalhau Pescanova Cong":
+                intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
+                break;
+            case "Filete de Pescada Comdalgel Cong":
+                intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
+                break;
+            case "Cavala Grande Granel":
+                intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
+                break;
+            case "Peixe Espada Branco Posta":
+                intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
+                break;
+            case "Perca do Nilo Posta":
+                intent = new Intent(context, activity_lombos_bacalhau_pescanova_cong.class);
                 break;
             default:
                 break;
