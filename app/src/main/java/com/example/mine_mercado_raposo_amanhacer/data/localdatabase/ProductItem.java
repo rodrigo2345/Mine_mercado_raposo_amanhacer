@@ -70,7 +70,9 @@ import com.example.mine_mercado_raposo_amanhacer.alimento_de_animais.activity_va
 import com.example.mine_mercado_raposo_amanhacer.alimento_de_animais.activity_valouro_granulado_galinhas_poedeiras_5kg;
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_sumo_amigo_morango_200ML;
 import com.example.mine_mercado_raposo_amanhacer.charcutaria.activity_toucinho_pedacos_sal_montanheira;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_carapau_grande_congelado_granel;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_red_fish_medio_hig;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_sardinha_congelada_granel;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_Arroz_Agulha_amanhecer;
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_cerveja_sem_alcool_super_bock_33CL;
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_pepsi_regular;
@@ -477,6 +479,12 @@ public class ProductItem {
                 break;
             case "Red Fish Medio Hig":
                 intent = new Intent(context, activity_red_fish_medio_hig.class);
+                break;
+            case "Sardinha Congelada a Granel":
+                intent = new Intent(context, activity_sardinha_congelada_granel.class);
+                break;
+            case "Carapau Grande Congelado a Granel":
+                intent = new Intent(context, activity_carapau_grande_congelado_granel.class);
                 break;
             default:
                 break;
