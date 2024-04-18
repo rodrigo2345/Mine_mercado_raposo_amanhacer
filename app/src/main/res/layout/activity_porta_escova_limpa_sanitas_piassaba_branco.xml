@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_porta_escova_limpa_sanitas_piassaba_branco">
+    tools:context=".Bazar.activity_porta_escova_limpa_sanitas_piassaba_branco">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_prato_branco_ebro">
+    tools:context=".Bazar.activity_prato_branco_ebro">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

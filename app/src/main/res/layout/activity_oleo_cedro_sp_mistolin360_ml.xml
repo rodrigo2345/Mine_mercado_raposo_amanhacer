@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_oleo_cedro_SP_mistolin_360ML">
+    tools:context=".Bazar.activity_oleo_cedro_SP_mistolin_360ML">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_tela_laminada_brilho_estampada_5h3">
+    tools:context=".Bazar.activity_tela_laminada_brilho_estampada_5h3">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

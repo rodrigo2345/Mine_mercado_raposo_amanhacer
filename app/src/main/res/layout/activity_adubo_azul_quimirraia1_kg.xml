@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_adubo_azul_quimirraia_1KG">
+    tools:context=".Bazar.activity_adubo_azul_quimirraia_1KG">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_fritadeira_rede_esmalte_24cm_orbita">
+    tools:context=".Bazar.activity_fritadeira_rede_esmalte_24cm_orbita">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

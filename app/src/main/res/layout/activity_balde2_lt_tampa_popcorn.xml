@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_balde_2Lt_tampa_Popcorn">
+    tools:context=".Bazar.activity_balde_2Lt_tampa_Popcorn">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

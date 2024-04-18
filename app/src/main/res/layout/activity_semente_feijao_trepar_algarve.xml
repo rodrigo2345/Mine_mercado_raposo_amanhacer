@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_semente_feijao_trepar_algarve">
+    tools:context=".Bazar.activity_semente_feijao_trepar_algarve">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

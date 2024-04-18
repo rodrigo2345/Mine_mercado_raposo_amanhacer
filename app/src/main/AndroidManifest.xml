@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -26,300 +26,303 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mine_mercado_raposo_amanhacer"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".produtos.activity_chinelos"
+            android:name=".congelados.activity_red_fish_medio_hig"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_raid_moscas_mosquitos_accion_fulminante_400ML"
+            android:name=".Bazar.activity_chinelos"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_insecticida_formigas_bio_fortana_100gr"
+            android:name=".Bazar.activity_raid_moscas_mosquitos_accion_fulminante_400ML"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_feijao_verde_rasteiro_patareco"
+            android:name=".Bazar.activity_insecticida_formigas_bio_fortana_100gr"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_semente_feijao_trepar_algarve"
+            android:name=".Bazar.activity_feijao_verde_rasteiro_patareco"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_prato_branco_ebro"
+            android:name=".Bazar.activity_semente_feijao_trepar_algarve"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_balde_tampa_5_5_LT"
+            android:name=".Bazar.activity_prato_branco_ebro"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_lenco_papel_branco_3f_6un"
+            android:name=".Bazar.activity_balde_tampa_5_5_LT"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_jogo_cama_905_MTS"
+            android:name=".Bazar.activity_lenco_papel_branco_3f_6un"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_jogo_cama_2_40MTS"
+            android:name=".Bazar.activity_jogo_cama_905_MTS"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_passadeira_belga_C_Debrum_Poliamida"
+            android:name=".Bazar.activity_jogo_cama_2_40MTS"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_enleia_polietileno_3mm_branca_rl_corda"
+            android:name=".Bazar.activity_passadeira_belga_C_Debrum_Poliamida"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_tela_laminada_brilho_estampada_5h3"
+            android:name=".Bazar.activity_enleia_polietileno_3mm_branca_rl_corda"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_tela_laminada_brilho_estampada_3d3"
+            android:name=".Bazar.activity_tela_laminada_brilho_estampada_5h3"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_fritadeira_rede_esmalte_24cm_orbita"
+            android:name=".Bazar.activity_tela_laminada_brilho_estampada_3d3"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_cacarola_aluminio_n22_orbita"
+            android:name=".Bazar.activity_fritadeira_rede_esmalte_24cm_orbita"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_cacarola_aluminio_n20_orbita"
+            android:name=".Bazar.activity_cacarola_aluminio_n22_orbita"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_cafeteira_inox_ibiza_hoyca_1lt"
+            android:name=".Bazar.activity_cacarola_aluminio_n20_orbita"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_papel_higienico_2f_domestico_compacto_amoos"
+            android:name=".Bazar.activity_cafeteira_inox_ibiza_hoyca_1lt"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_vaso_prato_terracota_castanho"
+            android:name=".Bazar.activity_papel_higienico_2f_domestico_compacto_amoos"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_balde_2Lt_tampa_Popcorn"
+            android:name=".Bazar.activity_vaso_prato_terracota_castanho"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_saco_lixo_ecolixo_50lt"
+            android:name=".Bazar.activity_balde_2Lt_tampa_Popcorn"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_limacide_250gr_caracois"
+            android:name=".Bazar.activity_saco_lixo_ecolixo_50lt"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_tinta_branca_sorcor_quimirraia_5LT"
+            android:name=".Bazar.activity_limacide_250gr_caracois"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_tinta_branca_ecomat_quimirraia_5LT"
+            android:name=".Bazar.activity_tinta_branca_sorcor_quimirraia_5LT"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_esponja_banho_mg127_tabomil"
+            android:name=".Bazar.activity_tinta_branca_ecomat_quimirraia_5LT"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_oleo_cedro_SP_mistolin_360ML"
+            android:name=".Bazar.activity_esponja_banho_mg127_tabomil"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_vaso_castanho_prato"
+            android:name=".Bazar.activity_oleo_cedro_SP_mistolin_360ML"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_vaso_castanho"
+            android:name=".Bazar.activity_vaso_castanho_prato"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_adubo_azul_quimirraia_1KG"
+            android:name=".Bazar.activity_vaso_castanho"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_trincha_junior"
+            android:name=".Bazar.activity_adubo_azul_quimirraia_1KG"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_porta_escova_limpa_sanitas_piassaba_branco"
+            android:name=".Bazar.activity_trincha_junior"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_escova_limpa_sanitas_piassaba_branco"
+            android:name=".Bazar.activity_porta_escova_limpa_sanitas_piassaba_branco"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_velas_iluminacao_v7_lumar"
+            android:name=".Bazar.activity_escova_limpa_sanitas_piassaba_branco"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_saco_pinhas_inflame_3KG"
+            android:name=".Bazar.activity_velas_iluminacao_v7_lumar"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_tapete_floral_polipropileno"
+            android:name=".Bazar.activity_saco_pinhas_inflame_3KG"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_folar_Mel"
+            android:name=".Bazar.activity_tapete_floral_polipropileno"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_queijada_requeijao"
+            android:name=".Pastelaria.activity_folar_Mel"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_salame_fatiado"
+            android:name=".Pastelaria.activity_queijada_requeijao"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_esses_azeite"
+            android:name=".Pastelaria.activity_salame_fatiado"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_broas_mel"
+            android:name=".Pastelaria.activity_esses_azeite"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_bolo_forma_noz"
+            android:name=".Pastelaria.activity_broas_mel"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_bolo_forma_laranja"
+            android:name=".Pastelaria.activity_bolo_forma_noz"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_Bolo_forma_amendoa"
+            android:name=".Pastelaria.activity_bolo_forma_laranja"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_bolo_forma_mel"
+            android:name=".Pastelaria.activity_Bolo_forma_amendoa"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_cerveja_sem_alcool_super_bock_33CL"
+            android:name=".Pastelaria.activity_bolo_forma_mel"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_garrafa_butano_13KG_rubis"
+            android:name=".bebidas.activity_cerveja_sem_alcool_super_bock_33CL"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_garrafa_tuti_13KG"
+            android:name=".gas.activity_garrafa_butano_13KG_rubis"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_garrafa_tuti_11KG"
+            android:name=".gas.activity_garrafa_tuti_13KG"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_garrafa_cepsa"
+            android:name=".gas.activity_garrafa_tuti_11KG"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_sumo_amigo_morango_200ML"
+            android:name=".gas.activity_garrafa_cepsa"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_pepsi_regular"
+            android:name=".bebidas.activity_sumo_amigo_morango_200ML"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_bacon_nacos_200GR"
+            android:name=".bebidas.activity_pepsi_regular"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_fiambre_perna_economico"
+            android:name=".charcutaria.activity_bacon_nacos_200GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_casca_ostra_1KG"
+            android:name=".charcutaria.activity_fiambre_perna_economico"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_mistura_canarios_1KG"
+            android:name=".alimento_de_animais.activity_casca_ostra_1KG"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_milho_inteiro_5KG"
+            android:name=".alimento_de_animais.activity_mistura_canarios_1KG"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_racao_pintos_104_valouro_5KG"
+            android:name=".alimento_de_animais.activity_milho_inteiro_5KG"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_fiambre_pa_200GR"
+            android:name=".alimento_de_animais.activity_racao_pintos_104_valouro_5KG"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_linguica_alentejana_180GR"
+            android:name=".charcutaria.activity_fiambre_pa_200GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_painho_porco_preto_300GR"
+            android:name=".charcutaria.activity_linguica_alentejana_180GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_campofrio_fiambre_peru_finissimo_FT"
+            android:name=".charcutaria.activity_painho_porco_preto_300GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_banha_porco_235GR"
+            android:name=".charcutaria.activity_campofrio_fiambre_peru_finissimo_FT"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_linguica_Porco_alentejano_180GR"
+            android:name=".charcutaria.activity_banha_porco_235GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_presunto_serrano_cura_FT_200GR"
+            android:name=".charcutaria.activity_linguica_Porco_alentejano_180GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_fiambre_frango_FT_classicas_90GR"
+            android:name=".charcutaria.activity_presunto_serrano_cura_FT_200GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_bacon_fumado_extra_pedacos_probar_190GR"
+            android:name=".charcutaria.activity_fiambre_frango_FT_classicas_90GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_presunto_duroc_nacos_primor_300GR"
+            android:name=".charcutaria.activity_bacon_fumado_extra_pedacos_probar_190GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_chourico_grosso_porco_preto_estremoz"
+            android:name=".charcutaria.activity_presunto_duroc_nacos_primor_300GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_chourico_grosso_porco_branco_estremoz"
+            android:name=".charcutaria.activity_chourico_grosso_porco_preto_estremoz"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_nobre_fiambre_fatias_finas_100GR"
+            android:name=".charcutaria.activity_chourico_grosso_porco_branco_estremoz"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_nobre_paio_york_FT_90GR"
+            android:name=".charcutaria.activity_nobre_fiambre_fatias_finas_100GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_nobre_chouricao_FT_100GR"
+            android:name=".charcutaria.activity_nobre_paio_york_FT_90GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_fiambre_peito_peru_forno_lenha_120GR"
+            android:name=".charcutaria.activity_nobre_chouricao_FT_100GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_probar_bacon_fumado_fatiado_75GR"
+            android:name=".charcutaria.activity_fiambre_peito_peru_forno_lenha_120GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_nobre_presunto_fatiado_70GR"
+            android:name=".charcutaria.activity_probar_bacon_fumado_fatiado_75GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_bacon_primor_nacos_200GR"
+            android:name=".charcutaria.activity_nobre_presunto_fatiado_70GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_chourico_carne_porco_branco_PB"
+            android:name=".charcutaria.activity_bacon_primor_nacos_200GR"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_toucinho_pedacos_sal_montanheira"
+            android:name=".charcutaria.activity_chourico_carne_porco_branco_PB"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_chourico_carne_porco_preto_PP"
+            android:name=".charcutaria.activity_toucinho_pedacos_sal_montanheira"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_morcela_porco_branco"
+            android:name=".charcutaria.activity_chourico_carne_porco_preto_PP"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_farinheira_branca_porco_branco"
+            android:name=".charcutaria.activity_morcela_porco_branco"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_avenal_racao_seca_gato_cereais_carne_4kg"
+            android:name=".charcutaria.activity_farinheira_branca_porco_branco"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_gato_mousse_purina_gourmet"
+            android:name=".alimento_de_animais.activity_avenal_racao_seca_gato_cereais_carne_4kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_racao_seca_gato_friskies_4kg"
+            android:name=".alimento_de_animais.activity_gato_mousse_purina_gourmet"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_peru_frango_purina_friskies"
+            android:name=".alimento_de_animais.activity_racao_seca_gato_friskies_4kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_avenal_racao_seca_gato_peixe_2kg"
+            android:name=".alimento_de_animais.activity_peru_frango_purina_friskies"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_avenal_racao_seca_gato_cereais_carne_2kg"
+            android:name=".alimento_de_animais.activity_avenal_racao_seca_gato_peixe_2kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_avenal_racao_seca_gato_cereais_carne_20kg"
+            android:name=".alimento_de_animais.activity_avenal_racao_seca_gato_cereais_carne_2kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_spike_racao_seca_cao_junior_4kg"
+            android:name=".alimento_de_animais.activity_avenal_racao_seca_gato_cereais_carne_20kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_avenal_basic_racao_seca_cao_adulto_20kg"
+            android:name=".alimento_de_animais.activity_spike_racao_seca_cao_junior_4kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_spike_racao_seca_cao_adulto_4kg"
+            android:name=".alimento_de_animais.activity_avenal_basic_racao_seca_cao_adulto_20kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_milho_partido_5kg"
+            android:name=".alimento_de_animais.activity_spike_racao_seca_cao_adulto_4kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_mistura_cereais_para_aves_5kg"
+            android:name=".alimento_de_animais.activity_milho_partido_5kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_mistura_cereais_para_aves_25kg"
+            android:name=".alimento_de_animais.activity_mistura_cereais_para_aves_5kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_valouro_granulado_galinhas_poedeiras_5kg"
+            android:name=".alimento_de_animais.activity_mistura_cereais_para_aves_25kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_valouro_granulado_galinhas_poedeiras_30kg"
+            android:name=".alimento_de_animais.activity_valouro_granulado_galinhas_poedeiras_5kg"
             android:exported="false" />
         <activity
-            android:name=".produtos.activity_milho_partido_25kg"
+            android:name=".alimento_de_animais.activity_valouro_granulado_galinhas_poedeiras_30kg"
+            android:exported="false" />
+        <activity
+            android:name=".alimento_de_animais.activity_milho_partido_25kg"
             android:exported="false" />
         <activity
             android:name=".view.SobreActivity"
@@ -350,7 +353,7 @@
             android:exported="false" />
         <activity
             android:name=".view.IntroActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

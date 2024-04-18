@@ -7,7 +7,7 @@
     android:focusable="true"
     android:background="#F4EEEA"
     android:focusableInTouchMode="true"
-    tools:context=".produtos.activity_sumo_amigo_morango_200ML">
+    tools:context=".bebidas.activity_sumo_amigo_morango_200ML">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

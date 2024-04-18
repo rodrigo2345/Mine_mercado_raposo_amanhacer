@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_passadeira_belga_C_Debrum_Poliamida">
+    tools:context=".Bazar.activity_passadeira_belga_C_Debrum_Poliamida">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

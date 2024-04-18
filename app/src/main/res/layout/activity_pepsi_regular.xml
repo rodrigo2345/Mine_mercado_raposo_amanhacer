@@ -7,7 +7,7 @@
     android:focusable="true"
     android:background="#F4EEEA"
     android:focusableInTouchMode="true"
-    tools:context=".produtos.activity_pepsi_regular">
+    tools:context=".bebidas.activity_pepsi_regular">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

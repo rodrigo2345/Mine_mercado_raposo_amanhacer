@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_painho_porco_preto_300GR">
+    tools:context=".charcutaria.activity_painho_porco_preto_300GR">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

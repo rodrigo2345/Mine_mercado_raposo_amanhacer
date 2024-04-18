@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_vaso_castanho">
+    tools:context=".Bazar.activity_vaso_castanho">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

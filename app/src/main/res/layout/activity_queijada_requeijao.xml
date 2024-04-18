@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_queijada_requeijao">
+    tools:context=".Pastelaria.activity_queijada_requeijao">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

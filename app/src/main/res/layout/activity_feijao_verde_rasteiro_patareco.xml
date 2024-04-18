@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_feijao_verde_rasteiro_patareco">
+    tools:context=".Bazar.activity_feijao_verde_rasteiro_patareco">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

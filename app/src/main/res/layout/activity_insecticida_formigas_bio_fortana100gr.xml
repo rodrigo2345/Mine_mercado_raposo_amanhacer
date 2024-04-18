@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_insecticida_formigas_bio_fortana_100gr">
+    tools:context=".Bazar.activity_insecticida_formigas_bio_fortana_100gr">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

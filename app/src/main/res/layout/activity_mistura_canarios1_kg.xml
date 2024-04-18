@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusable="true"
-    tools:context=".produtos.activity_mistura_canarios_1KG">
+    tools:context=".alimento_de_animais.activity_mistura_canarios_1KG">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

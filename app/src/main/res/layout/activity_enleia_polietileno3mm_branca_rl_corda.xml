@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_enleia_polietileno_3mm_branca_rl_corda">
+    tools:context=".Bazar.activity_enleia_polietileno_3mm_branca_rl_corda">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

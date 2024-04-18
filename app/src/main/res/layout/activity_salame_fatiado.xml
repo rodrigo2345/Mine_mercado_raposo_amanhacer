@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="#F4EEEA"
-    tools:context=".produtos.activity_salame_fatiado">
+    tools:context=".Pastelaria.activity_salame_fatiado">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
