@@ -22,17 +22,17 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class activity_hamburger_peru_avibom_3un extends AppCompatActivity {
+public class activity_ameijoa_vietnamita_congelada_copesma extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ContactAdapter adapter;
     private List<Contact> carrinhoList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hamburger_peru_avibom3un);
+        setContentView(R.layout.activity_ameijoa_vietnamita_congelada_copesma);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Hamburger Peru Avibom 3UN", "1,85€","" , R.drawable.hamburger_peru_avibom3un, 1));
-        recyclerView = findViewById(R.id.recyclerView_product118);
+        contactList.add(new Contact("Ameijoa Vietnamita 60/80 Congelada Copesma", "3,15€","" , R.drawable.ameijoa_vietnamita_congelada_copesma, 1));
+        recyclerView = findViewById(R.id.recyclerView_product119);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);
@@ -56,12 +56,12 @@ public class activity_hamburger_peru_avibom_3un extends AppCompatActivity {
     }
 
     public void Search(View view) {
-        Intent intent = new Intent(activity_hamburger_peru_avibom_3un.this, PesquisaActivity.class);
+        Intent intent = new Intent(activity_ameijoa_vietnamita_congelada_copesma.this, PesquisaActivity.class);
         startActivity(intent);
     }
 
     public void Home(View view) {
-        Intent intent = new Intent(activity_hamburger_peru_avibom_3un.this, MainActivity.class);
+        Intent intent = new Intent(activity_ameijoa_vietnamita_congelada_copesma.this, MainActivity.class);
         startActivity(intent);
     }
 }

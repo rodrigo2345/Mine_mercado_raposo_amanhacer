@@ -22,17 +22,17 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class activity_hamburger_peru_avibom_3un extends AppCompatActivity {
+public class activity_gelado_viamore_globo extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ContactAdapter adapter;
     private List<Contact> carrinhoList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hamburger_peru_avibom3un);
+        setContentView(R.layout.activity_gelado_viamore_globo);
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Hamburger Peru Avibom 3UN", "1,85€","" , R.drawable.hamburger_peru_avibom3un, 1));
-        recyclerView = findViewById(R.id.recyclerView_product118);
+        contactList.add(new Contact("Gelado Viamore Globo", "2,30€","" , R.drawable.gelado_viamore_globo, 1));
+        recyclerView = findViewById(R.id.recyclerView_product121);
         carrinhoList = getCarrinhoListFromSharedPreferences();
 
         adapter = new ContactAdapter(this, contactList, carrinhoList);
@@ -56,12 +56,12 @@ public class activity_hamburger_peru_avibom_3un extends AppCompatActivity {
     }
 
     public void Search(View view) {
-        Intent intent = new Intent(activity_hamburger_peru_avibom_3un.this, PesquisaActivity.class);
+        Intent intent = new Intent(activity_gelado_viamore_globo.this, PesquisaActivity.class);
         startActivity(intent);
     }
 
     public void Home(View view) {
-        Intent intent = new Intent(activity_hamburger_peru_avibom_3un.this, MainActivity.class);
+        Intent intent = new Intent(activity_gelado_viamore_globo.this, MainActivity.class);
         startActivity(intent);
     }
 }

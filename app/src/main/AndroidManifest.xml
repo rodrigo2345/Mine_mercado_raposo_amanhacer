@@ -28,6 +28,24 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".congelados.activity_gelado_fruti_polos_hero_globo"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_gelado_prestige_globo"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_gelado_coppeti_globo"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_gelado_viamore_globo"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_delicias_Mar_Nos_250gr"
+            android:exported="false" />
+        <activity
+            android:name=".congelados.activity_ameijoa_vietnamita_congelada_copesma"
+            android:exported="false" />
+        <activity
             android:name=".congelados.activity_hamburger_peru_avibom_3un"
             android:exported="false" />
         <activity

@@ -79,6 +79,10 @@ import com.example.mine_mercado_raposo_amanhacer.congelados.activity_entremeada_
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_febra_guisar_porco;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_filete_pescada_comdalgel_cong;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_frango_carne_congelado_e;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_gelado_coppeti_globo;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_gelado_fruti_polos_hero_globo;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_gelado_prestige_globo;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_gelado_viamore_globo;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_hamburger_peru_avibom_3un;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_lombos_bacalhau_pescanova_cong;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_orelha_porco_congelada_saco_2un;
@@ -88,6 +92,8 @@ import com.example.mine_mercado_raposo_amanhacer.congelados.activity_pescada_pos
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_red_fish_medio_hig;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_sardinha_congelada_granel;
 import com.example.mine_mercado_raposo_amanhacer.congelados.activity_sardinha_pequena_petinga_congelada_granel;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_ameijoa_vietnamita_congelada_copesma;
+import com.example.mine_mercado_raposo_amanhacer.congelados.activity_delicias_Mar_Nos_250gr;
 import com.example.mine_mercado_raposo_amanhacer.produtos.activity_Arroz_Agulha_amanhecer;
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_cerveja_sem_alcool_super_bock_33CL;
 import com.example.mine_mercado_raposo_amanhacer.bebidas.activity_pepsi_regular;
@@ -545,6 +551,24 @@ public class ProductItem {
                 break;
             case "Hamburger Peru Avibom 3UN":
                 intent = new Intent(context, activity_hamburger_peru_avibom_3un.class);
+                break;
+            case "Ameijoa Vietnamita 60/80 Congelada Copesma":
+                intent = new Intent(context, activity_ameijoa_vietnamita_congelada_copesma.class);
+                break;
+            case "Delicias do Mar Nos 250GR":
+                intent = new Intent(context, activity_delicias_Mar_Nos_250gr.class);
+                break;
+            case "Gelado Viamore Globo":
+                intent = new Intent(context, activity_gelado_viamore_globo.class);
+                break;
+            case "Gelado Coppeti Globo":
+                intent = new Intent(context, activity_gelado_coppeti_globo.class);
+                break;
+            case "Gelado Prestige Globo":
+                intent = new Intent(context, activity_gelado_prestige_globo.class);
+                break;
+            case "Gelado Fruti Polos Hero Globo":
+                intent = new Intent(context, activity_gelado_fruti_polos_hero_globo.class);
                 break;
             default:
                 break;
