@@ -8,6 +8,7 @@
         <item>Pastelaria</item>
         <item>Bazar</item>
         <item>Calcado</item>
+        <item>Congelados</item>
         <item>Gas</item>
     </string-array>
 
@@ -21,5 +22,12 @@
         <item>Cerveja</item>
         <item>Refrigerantes</item>
         <item>Sumos</item>
+    </string-array>
+
+    <string-array name="subcategories_congelados_array">
+        <item>Peixe</item>
+        <item>Carne</item>
+        <item>Marisco Congelado e Outro Marisco</item>
+        <item>Gelados</item>
     </string-array>
 </resources>

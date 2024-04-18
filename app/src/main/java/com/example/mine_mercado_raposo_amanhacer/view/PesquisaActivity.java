@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -20,7 +21,9 @@ import com.example.mine_mercado_raposo_amanhacer.R;
 import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.Contact;
 import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.ProductItem;
 import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.ProductService;
+import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.ProductService2;
 import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.RetrofitClientInstance;
+import com.example.mine_mercado_raposo_amanhacer.data.localdatabase.RetrofitClientInstance2;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -35,8 +38,11 @@ import retrofit2.Response;
 
 public class PesquisaActivity extends AppCompatActivity {
 
-    private List<ProductItem> productList = new ArrayList<>();
+    private List<ProductItem> productList1 = new ArrayList<>();
+    private List<ProductItem> productList2 = new ArrayList<>();
     private AutoCompleteProductAdapter autoCompleteAdapter;
+
+    private List<ProductItem> mergedList = new ArrayList<>();
     private Spinner categorySpinner;
     private String selectedCategory = "";
 
@@ -59,8 +65,9 @@ public class PesquisaActivity extends AppCompatActivity {
                         showSubcategoriesDialog(R.array.subcategories_bebidas_array);
                     } else if (selectedCategory.equalsIgnoreCase("Alimento de Animais")) {
                         showSubcategoriesDialog(R.array.subcategories_alimento_animais_array);
-                    }
-                    else {
+                    } else if (selectedCategory.equalsIgnoreCase("Congelados")) {
+                        showSubcategoriesDialog(R.array.subcategories_congelados_array);
+                    } else {
                         filterProductsAndUpdateList("");
                     }
                 }
@@ -78,6 +85,10 @@ public class PesquisaActivity extends AppCompatActivity {
         autoCompleteTextView.setAdapter(autoCompleteAdapter);
 
         fetchProductsFromAPI();
+        fetchProductsFromAPI2();
+
+        Log.d("PesquisaActivity", "onCreate: Dados das APIs solicitados");
+
 
         WebView webView = findViewById(R.id.webView2);
         String video = "<html><body style=\"margin:0;padding:0;\"><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/lVOuaU44bKk?si=nVnAjkRGwhljesgK\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
@@ -110,28 +121,52 @@ public class PesquisaActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<ProductItem>> call, Response<List<ProductItem>> response) {
                 if (response.isSuccessful()) {
-                    productList = response.body();
-                    filterProductsAndUpdateList("");
-                    Toast.makeText(PesquisaActivity.this, "Produtos atualizados com sucesso", Toast.LENGTH_SHORT).show();
+                    productList1 = response.body();
+                    mergeAndFilterProducts();
                 } else {
-                    Toast.makeText(PesquisaActivity.this, "Falha ao obter dados da API", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<List<ProductItem>> call, Throwable t) {
-                Toast.makeText(PesquisaActivity.this, "Erro de conexão: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void fetchProductsFromAPI2() {
+        ProductService2 service = RetrofitClientInstance2.getRetrofitInstance2().create(ProductService2.class);
+        Call<List<ProductItem>> call = service.getProduct2();
+
+        call.enqueue(new Callback<List<ProductItem>>() {
+            @Override
+            public void onResponse(Call<List<ProductItem>> call, Response<List<ProductItem>> response) {
+                if (response.isSuccessful()) {
+                    productList2 = response.body();
+                    mergeAndFilterProducts();
+                } else {
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<ProductItem>> call, Throwable t) {
+            }
+        });
+    }
+
+    private void mergeAndFilterProducts() {
+        mergedList.clear();
+        mergedList.addAll(productList1);
+        mergedList.addAll(productList2);
+        filterProductsAndUpdateList("");
     }
 
     private void filterProductsAndUpdateList(String filter) {
         if (TextUtils.isEmpty(filter)) {
             if (selectedCategory.equalsIgnoreCase("Todos")) {
-                autoCompleteAdapter.updateList(productList);
+                autoCompleteAdapter.updateList(mergedList);
             } else {
                 List<ProductItem> filteredList = new ArrayList<>();
-                for (ProductItem product : productList) {
+                for (ProductItem product : mergedList) {
                     if (product.getCategory() != null && product.getCategory().equalsIgnoreCase(selectedCategory)) {
                         filteredList.add(product);
                     }
@@ -140,7 +175,7 @@ public class PesquisaActivity extends AppCompatActivity {
             }
         } else {
             List<ProductItem> filteredList = new ArrayList<>();
-            for (ProductItem product : productList) {
+            for (ProductItem product : mergedList) {
                 if (product.getCategory() != null && product.getCategory().equalsIgnoreCase(selectedCategory)
                         && product.getSubcategory() != null && product.getSubcategory().equalsIgnoreCase(filter)) {
                     filteredList.add(product);
