@@ -52,9 +52,14 @@ public class PesquisaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pesquisa);
 
         categorySpinner = findViewById(R.id.category_spinner);
-        ArrayAdapter<CharSequence> categoryAdapter = ArrayAdapter.createFromResource(this, R.array.categories_array, android.R.layout.simple_spinner_item);
-        categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        categorySpinner.setAdapter(categoryAdapter);
+
+
+        String[] categories = getResources().getStringArray(R.array.categories_array);
+        int[] categoryImages = {R.drawable.ic_all, R.drawable.logo, R.drawable.ic_alimento_animais, R.drawable.ic_bebidas, R.drawable.ic_charcutaria, R.drawable.ic_pastelaria, R.drawable.ic_bazar, R.drawable.ic_calcado, R.drawable.ic_congelados, R.drawable.ic_gas};
+
+        CustomSpinnerAdapter adapter = new CustomSpinnerAdapter(this, R.layout.spinner_item_layout, categories, categoryImages);
+        categorySpinner.setAdapter(adapter);
+
         categorySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
@@ -86,9 +91,6 @@ public class PesquisaActivity extends AppCompatActivity {
 
         fetchProductsFromAPI();
         fetchProductsFromAPI2();
-
-        Log.d("PesquisaActivity", "onCreate: Dados das APIs solicitados");
-
 
         WebView webView = findViewById(R.id.webView2);
         String video = "<html><body style=\"margin:0;padding:0;\"><iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/lVOuaU44bKk?si=nVnAjkRGwhljesgK\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
@@ -124,11 +126,13 @@ public class PesquisaActivity extends AppCompatActivity {
                     productList1 = response.body();
                     mergeAndFilterProducts();
                 } else {
+                    Toast.makeText(PesquisaActivity.this, "Erro ao carregar produtos da API 1", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<List<ProductItem>> call, Throwable t) {
+                Toast.makeText(PesquisaActivity.this, "Falha ao carregar produtos da API 1", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -144,11 +148,13 @@ public class PesquisaActivity extends AppCompatActivity {
                     productList2 = response.body();
                     mergeAndFilterProducts();
                 } else {
+                    Toast.makeText(PesquisaActivity.this, "Erro ao carregar produtos da API 2", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<List<ProductItem>> call, Throwable t) {
+                Toast.makeText(PesquisaActivity.this, "Falha ao carregar produtos da API 2", Toast.LENGTH_SHORT).show();
             }
         });
     }
